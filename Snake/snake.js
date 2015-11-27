@@ -63,11 +63,11 @@ function animate()
 		// clear
 		context.clearRect(0, 0, canvas.width, canvas.height);
 		displayText("Score: " + (snakeLen - 4));
-		display();
+		display(hidden);
 	}
 	else
 	{
-		displayText("You so Sux.. Game Over homie");
+		displayText("Game Over");
 	}
 	//context.drawImage(aniblock, aniblock_x, aniblock_y); 
 
