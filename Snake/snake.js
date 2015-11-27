@@ -63,7 +63,7 @@ function animate()
 		// clear
 		context.clearRect(0, 0, canvas.width, canvas.height);
 		displayText("Score: " + (snakeLen - 4));
-		display(hidden);
+		display();
 	}
 	else
 	{
