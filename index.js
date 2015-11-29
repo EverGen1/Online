@@ -10,5 +10,5 @@ function pageChaneB{
  var div2 = document.getElementById("2");
  div1.style.visibility = 'hidden';
  div2.style.visibility = 'visible';
- document.getElementById("rt1").innerHTML = document.getElementById("t").innerHTML;
+ document.getElementById("t").innerHTML = document.getElementById("rt1").innerHTML;
 }
