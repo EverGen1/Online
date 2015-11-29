@@ -3,7 +3,7 @@
     <head>
       <name>Contact</name>
       <meta charset="UTF-8">
-      <meta name="description" content="EverGen Compaies official website">
+      <meta 
       <style>
         body{
           background-color:aqua;
