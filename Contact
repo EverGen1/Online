@@ -3,7 +3,7 @@
     <head>
       <name>Contact</name>
       <meta charset="UTF-8">
-      <meta 
+      <meta name="viewport" content="width=device-width">
       <style>
         body{
           background-color:aqua;
