@@ -28,6 +28,9 @@
           width:250px;
           align-text:center;
         }
+        ul#def1 li{
+         display:inline;
+        }
       </style>
     </head>
     <body>
@@ -103,6 +106,25 @@ document.write(unescape("%3cscript type='text/javascript' src='"+sa_protocol+":/
         <div>
          <ul id="ref">
           <h2>
-           <li><a href="" onclick="page1()">
+           <li><a href="" onclick="page1()"><font color="white">HTML</font></a></li>
+           <li><a href="" onclick="page2()"><font color="white">JS</font></a></li>
+           <li><a href="" onclick="page3()"><font color="white">Dictionary</a></li>
+          </h2>
+         </ul>
+         <script type="text/javascript" src="pages.js"></script>
+        </div>
+        <div>
+         <form action="search.js" method="post">
+          <input type="text" style="width:400px;">
+          <input type="submit" value="Search">
+         </form>
+         <script type="text/javascript" src="search.js"></script>
+         <span id="page1">
+          <div>
+           <ul id="def1">
+            <li><h3>HTML</h3></li>
+            <li><p>A common code to use to make a website</p><p>included id</p><p>DOCTYPE! html</p></li>
+           </ul>
+        </div>
     </body>
   </html>
