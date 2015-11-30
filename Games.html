@@ -21,7 +21,12 @@
         ul#main li{
           display:inline;
           width:250px;
-          align-text:center;
+          text-align:center;
+        }
+        ul#gmain li{
+          display:inline;
+          width:100px;
+          text-align:center;
         }
       </style>
     </head>
@@ -97,7 +102,32 @@ document.write(unescape("%3cscript type='text/javascript' src='"+sa_protocol+":/
       </div>
       <div id="1">
         <span id="mt">
-          <ul style="display:inline;width:200px;"></ul>
+          <ul id="gmain">
+            <h2>
+              <li>
+                <a href="" onclick="page1()">
+                  <font color="white">Aptoide</font>
+                </a>
+              </li>
+              <li>
+                <a href="" onclick="page2()">
+                  <font color="white">Online</font>
+                </a>
+              </li>
+              <li>
+                <a href="" onclick="page3()">
+                  <font color="white">Android</font>
+                </a>
+              </li>
+            </h2>
+          </ul>
+          <script type="text/javascript">
+            var 1 = document.getElementById("maintTarget");
+            var 2 = document.getElementById("replacemain1");
+            var 3 = document.getElementById("replacemain2");
+            function page1()
+            
+          </script>
         </span>
       </div>
       </div>
