@@ -2,7 +2,7 @@
 var a = document.getElementById("p1");
 var b = document.getElementById("p2");
 var c = document.getElementById("p3");
-function page1(){
+function page1('a','a'){
  if(a.style.display == 'block'){
   a.style.display = 'none';
  }else{
@@ -11,7 +11,7 @@ function page1(){
  b.style.display = 'none';
  c.style.display = 'none';
  a.innerHTML = a.innerHTML
-function page2()
+function page2('b','b')
  if(b.style.display == 'block'){
   b.style.display = 'none';
  }else{
