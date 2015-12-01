@@ -4,19 +4,19 @@ var b = document.getElementById("p2");
 var c = document.getElementById("p3");
 function page1(){
  if(a.style.display == 'block'){
-  a.style.visibility = 'none';
+  a.style.display = 'none';
  }else{
-  a.style.visibility = 'block';
+  a.style.display = 'block';
  }
- b.style.visibility = 'none';
- c.style.visibility = 'none';
+ b.style.display = 'none';
+ c.style.display = 'none';
  a.innerHTML = a.innerHTML
 function page2()
  if(b.style.display == 'block'){
-  b.style.visibility = 'none';
+  b.style.display = 'none';
  }else{
-  b.style.visibility = 'block';
+  b.style.display = 'block';
  }
-  c.style.visibility = 'none';
+  c.style.display = 'none';
  c.innerHTML = a.innerHTML;
 }
