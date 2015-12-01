@@ -18,5 +18,5 @@ function page2()
   b.style.display = 'block';
  }
   c.style.display = 'none';
- c.innerHTML = a.innerHTML;
+ b.innerHTML = a.innerHTML;
 }
