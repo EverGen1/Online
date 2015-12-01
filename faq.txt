@@ -4,3 +4,4 @@ Step 1:Go to settings pages.
 Step 2:Open the security tab.
 Step 3:Check the unkown sources check box.
 Step 4:Once download, UNCHECK!!!
+
