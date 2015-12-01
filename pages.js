@@ -1,22 +1,22 @@
 <script type="text/javascript">
-var 1 = document.getElementById("p1");
-var 2 = document.getElementById("p2");
-var 3 = document.getElementById("p3");
+var a = document.getElementById("p1");
+var b = document.getElementById("p2");
+var c = document.getElementById("p3");
 function page1(){
- if(1.style.visibility == 'visible'){
-  1.style.visibility = 'hidden';
+ if(a.style.visibility == 'visible'){
+  a.style.visibility = 'hidden';
  }else{
-  1.style.visibility = 'visible';
+  a.style.visibility = 'visible';
  }
- 2.style.visibility = 'hidden';
- 3.style.visibility = 'hidden';
- 1.innerHTML = 1.innerHTML;
+ b.style.visibility = 'hidden';
+ c.style.visibility = 'hidden';
+ a.innerHTML = a.innerHTML;
 function page2(){
- if(2.style.visibility == 'visible'){
-  2.style.visibility = 'hidden';
+ if(b.style.visibility == 'visible'){
+  b.style.visibility = 'hidden';
  }else{
-  2.style.visibility = 'visible';
+  b.style.visibility = 'visible';
  }
- 3.style.visibility = 'hidden';
- 2.innerHTML = 1.innerHTML;
+  c.style.visibility = 'hidden';
+ c.innerHTML = a.innerHTML;
 }
