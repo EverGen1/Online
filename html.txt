@@ -1,6 +1,36 @@
-What fo you need to start first?
+What do you need to start first?
 <DOCTYPE! html>
 <html>
 <head></head>
 <body></body>
 </html>
+
+What goes in the <head>?
+In the head this is what is required.
+<head>
+<title>Example</title>
+<meta>
+<style></style>
+</head>
+
+What is it exactly that meta does?
+Meta help describe your website, and other important details.
+<meta chaset="¹">
+1)You can choose either, or this
+                       ^   ^
+                    UTF-8. |
+                       ISO-8859-1
+<meta name="²A" content="²B">
+2A(1):description
+2B(1):website/html document description
+
+2A(2):keywords
+2A(2):word used to find html document
+
+Does meta need a closing?
+No
+
+What is a closing?
+Opening-><html></html><-Closing
+
+The <body> is unlike the head witch can't be seen. This is where you will display your content.
