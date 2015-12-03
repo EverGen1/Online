@@ -4,4 +4,6 @@
  package="http://www.evergencompany.co/APPS/OkEver/src/co/evergencompany/android/"
  android:installLocation=["internalOnly"]
  <application
+  android:allowTaskReparenting=["false"]
+  android:label="
   
