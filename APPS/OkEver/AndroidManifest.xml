@@ -5,5 +5,17 @@
  android:installLocation=["internalOnly"]
  <application
   android:allowTaskReparenting=["false"]
-  android:label="
-  
+  android:label="appName"
+  android:name="appName"
+  android:logo="ESoft.png"
+  <supports-screens
+   android:smallScreens="true"
+   android:normalScreens="true"
+   android:largeScreens="true"
+   android:anyDensity="true"
+  />
+  <TextView 
+   <TextView
+    android:textColor="aqua"
+    androi
+   
