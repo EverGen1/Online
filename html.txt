@@ -34,3 +34,40 @@ What is a closing?
 Opening-><html></html><-Closing
 
 The <body> is unlike the head witch can't be seen. This is where you will display your content.
+
+What can you add in the body?
+A-Z ordered Commonly Used Only.
+<a></a>
+<b></b>
+<div></div>
+<font></font>
+<form></form>
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+<li></li>
+<script></script>
+<ul></ul>
+
+<a> Can be filled with a href. A href is a link. So using a it would look like.
+<a href="Link Goes Here">
+
+<b> Is used to make letters bold. When using this strin it would look like.
+<b>Example</b>
+
+<div> is known as a container. To use div is to make a group of code more organized. Doing so you will need to add a class. Using what you know, so far the entire thing would look like.
+<div class="head">
+ <a href="Link Goes Here">
+  <b>Example</b>
+ </a>
+</div>
+
+<font> If you want the font to look a certain way. Use this, and add tags color; size. Witch would look like for my website.
+<font color="aqua" size="54">
+
+<form> Has many different uses, for adding a checkout, to the simple sign up. In the form there is a element called <input>.
+<input> Should be filled with 5 types; text, submit, radio, and select.
+
