@@ -24,6 +24,10 @@
           align-text:center;
         }
       </style>
+     <script>
+      var formIn1 = document.getElementById("f1");
+      var formIn2 = document.getElementById("f2");
+      var x1 = document.getElementById("f1").value;
     </head>
     <body>
 <!-- Google Tag Manager -->
@@ -99,7 +103,15 @@ document.write(unescape("%3cscript type='text/javascript' src='"+sa_protocol+":/
       </div>
       <div id="1">
        <form action="accounts.php" method="post">
-        <input type="text" value="FullName" onfocus="value=''" onfocusout="value='FullName'">
+        <input id="f1" type="text" value="FullName" onfocus="value=''" onfocusout="focusOut">
+         <script>
+          function focusOut{
+           if(formIn1.value == ''){
+            formIn1.value = 'x1';
+           }else{
+            formIn1.value = 'FullName';
+           }
+          </script>
        </form>
       </div>
       <div>
