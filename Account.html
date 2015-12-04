@@ -31,16 +31,16 @@
       var x2 = document.getElementById("f2").value; 
       function focusOut1(){
        if(formIn1.value = ''){
-        formIn1.value = 'FullName';
+        formIn1.value = 'x1';
        }else{
-        formIn1.value ='x1';
+        formIn1.value ='Full Name';
        }
       }
       function focusOut2(){
        if(formIn2 =''){
-        formIn2.value ='Password';
-       }else{
         formIn2.value ='x2';
+       }else{
+        formIn2.value ='Password';
        }
       }
      </script>
@@ -119,7 +119,7 @@ document.write(unescape("%3cscript type='text/javascript' src='"+sa_protocol+":/
       </div>
       <div id="1">
        <form action="accounts.php" method="post">
-        <input id="f1" type="text" value="FullName" onfocus="value=''" onfocusout="focusOut1">
+        <input id="f1" type="text" value="Full Name" onfocus="value=''" onfocusout="focusOut1">
         <br><input id="f2" type="text" value="Password" onfocus="value=''" onfocusout="focusOut2"></br>
        </form>
       </div>
