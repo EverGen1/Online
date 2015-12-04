@@ -28,6 +28,15 @@
       var formIn1 = document.getElementById("f1");
       var formIn2 = document.getElementById("f2");
       var x1 = document.getElementById("f1").value;
+      var x2 = document.getElementById("f2").value;
+      function focusOut1(){
+       if(formIn1.value= ''){
+        formIn1.value = '';
+       }else{
+        formIn1.value ='x1';
+       }
+      }
+     </script>
     </head>
     <body>
 <!-- Google Tag Manager -->
@@ -103,15 +112,8 @@ document.write(unescape("%3cscript type='text/javascript' src='"+sa_protocol+":/
       </div>
       <div id="1">
        <form action="accounts.php" method="post">
-        <input id="f1" type="text" value="FullName" onfocus="value=''" onfocusout="focusOut">
-         <script>
-          function focusOut{
-           if(formIn1.value == ''){
-            formIn1.value = 'x1';
-           }else{
-            formIn1.value = 'FullName';
-           }
-          </script>
+        <input id="f1" type="text" value="FullName" onfocus="value=''" onfocusout="focusOut1">
+        <br><input id="f2" type="text" value="Password" onfocus="value=''" onfocusout="focusOut2"></br>
        </form>
       </div>
       <div>
