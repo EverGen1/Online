@@ -26,6 +26,7 @@
       </style>
      <script>
       var x1 = document.getElementById("f1").value;
+      var x2 = document.getElementById("f2").value;
       function focusOut1(){
       	if(document.getElementById("f1").value ='x1'){
       		document.getElementById("f1").value ='';
@@ -33,6 +34,14 @@
       		document.getElementById("f1").value ='Full Name';
       	}
       }
+       function focusOut2(){
+      	if(document.getElementById("f1").value ='x2'){
+      		document.getElementById("f1").value ='';
+      	}elseif(document.getElementById("f1").value =''){
+      		document.getElementById("f1").value ='Password';
+      	}
+      }
+
      </script>
     </head>
     <body>
