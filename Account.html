@@ -25,14 +25,6 @@
         }
       </style>
      <script>
-      var x1 = document.getElementById("f1").value;
-      function focus1(){
-       if(document.getElementById("f1").value ='x1'){
-        document.getElementById("f1").value ='';
-       }else{
-        document.getElementById("f1").value ='x1';
-       }
-      }
      </script>
     </head>
     <body>
@@ -109,8 +101,8 @@ document.write(unescape("%3cscript type='text/javascript' src='"+sa_protocol+":/
       </div>
       <div id="1">
        <form action="accounts.php" method="post">
-        <input id="f1" type="text" value="Full Name" onfocus="focus1()" onfocusout="focusOut1()">
-        <br><input id="f2" type="text" value="Password" onfocus="focus2()" onfocusout="focusOut2()"></br>
+        <input id="f1" type="text" value="Full Name" onfocus="value=''" onfocusout="focusOut1()">
+        <br><input id="f2" type="text" value="Password" onfocus="value=''" onfocusout="focusOut2()"></br>
        </form>
       </div>
       <div>
