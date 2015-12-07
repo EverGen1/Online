@@ -110,12 +110,19 @@ document.write(unescape("%3cscript type='text/javascript' src='"+sa_protocol+":/
         </div>
         </div>
         <div>
-         <form action="search.js" method="post">
-          <input type="text" style="width:400px;">
-          <input type="submit" value="Search">
-         </form>
-         <script type="text/javascript" src="search.js"></script>
-         <span>
+  <script>
+  (function() {
+    var cx = '006743066278069570411:zfwrs3osqrw';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>    
           <div>
            <ul id="def1">
             <li><h3><a href="html.txt">HTML</a></h3></li>
