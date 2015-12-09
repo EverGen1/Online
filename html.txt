@@ -82,3 +82,9 @@ The select is not a tag within the input element. It is displayed as shown below
  <option value="3">married</option>
 </select>
 
+Input type text will appear as a box, and like most objects can be styled within the element.
+<input type="text" style="width;300px;">
+
+Also in 
+
+
