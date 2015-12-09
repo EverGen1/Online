@@ -70,4 +70,15 @@ A-Z ordered Commonly Used Only.
 
 <form> Has many different uses, for adding a checkout, to the simple sign up. In the form there is a element called <input>.
 <input> Should be filled with 5 types; text, submit, radio, and select.
+Text: A textbox that will have simple text.
+Submit: To send your form to a php document, or email the form to what is specified.
+Radio: A one multi-answer selection that isn't checked but selected.
+Select: A drop-down selection list.
+
+The select is not a tag within the input element. It is displayed as shown below.
+<select required>
+ <option value="1">single</option>
+ <option value="2">dating</option>
+ <option value="3">married</option>
+</select>
 
