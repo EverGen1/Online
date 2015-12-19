@@ -7,7 +7,7 @@ function bottomListClick1(){
  }else{
   reFill1.visibility = "visible";
  }
- reFill1.innerHTML = bodFill.innerHTML;
+ bodFill.innerHTML = reFill1.innerHTML;
 }
 
 
