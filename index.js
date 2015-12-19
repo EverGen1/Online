@@ -1,10 +1,13 @@
 var bodFill = document.getElementById("emptyArea");
-var bodP = document.getElementById("emptyP");
-var botLi2 = document.getElementById("bottomList2");
-function bottomListClick("bodFill", "bodP"){
- bodP.value = "FAQ";
- bodP.OnResult( changeOnValue );
+var reFill1 = document.getElementById("reFillArea1");
+
+function bottomListClick1("bodFill", "reFill1"){
+ if(reFill1.style.visibility = 'visible'){
+  reFill1.style.visibility = "hidden";
+ }else{
+  reFill1.style.visibility = "visible";
+ }
+ reFill1 = bodFill;
 }
-function changeOnValue(){
- while(bodP.value = 'FAQ'){
-  
+
+
