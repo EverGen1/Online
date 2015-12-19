@@ -4,6 +4,7 @@ if(!$db) die("Error Connecting To Database");
 mysql_select_db("sql3100432", $db);
 $sql = "INSERT INTO movieformdata (Name, Email, Password) VALUES (".
          PrepSQL($varName) . ", " .
+         PreoSQL($varUser) . ", " .
          PrepSQL($varEmail) . ", " .
          PrepSQL($varPassword) . ", ";
   function PrepSQL($value)
@@ -20,11 +21,15 @@ $sql = "INSERT INTO movieformdata (Name, Email, Password) VALUES (".
 if($_POST['submit'] == "SignUp")
 {
  $varName = $_POST['fullName'];
+ $varUser = $_POST['UserName'];
  $varEmail = $_POST['Email'];
  $varPassword = $_POST['Password'];
  $errorMessage = "";
 if(empty($varName)){
  $errorMessage .= "<li>Name Required</li>";
+}
+if(empty($varUser)){
+ $errorMessage .= "<li>Make A UserName</li>";
 }
 if(empty($varEmail)){
  $errorMessage .= "<li>Email Required</li>";
@@ -59,6 +64,29 @@ function Login()
      
     $_SESSION[$this->GetLoginSessionVar()] = $username;
      
+    return true;
+}
+function CheckLoginInDB($username,$password)
+{
+    if(!$this->DBLogin())
+    {
+        $this->HandleError("Database login failed!");
+        return false;
+    }          
+    $username = $this->SanitizeForSQL($username);
+    $pwdmd5 = md5($password);
+    $qry = "Select name, email from $this->tablename ".
+        " where username='$username' and password='$pwdmd5' ".
+        " and confirmcode='y'";
+     
+    $result = mysql_query($qry,$this->connection);
+     
+    if(!$result || mysql_num_rows($result) <= 0)
+    {
+        $this->HandleError("Error logging in. ".
+            "The username or password does not match");
+        return false;
+    }
     return true;
 }
 ?>
