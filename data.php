@@ -2,7 +2,7 @@
 $db = mysql_connect("sql3.freemysqlhosting.net", "sql3100432", "3KIBBEuddj");
 if(!$db) die("Error Connecting To Database");
 mysql_select_db("sql3100432", $db);
-$sql = "INSERT INTO movieformdata (Name, Email, Password) VALUES (".
+$sql = "INSERT INTO formdata (Name, UserName, Email, Password) VALUES (".
          PrepSQL($varName) . ", " .
          PreoSQL($varUser) . ", " .
          PrepSQL($varEmail) . ", " .
