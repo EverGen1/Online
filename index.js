@@ -14,10 +14,15 @@ function leftChange1(){
   a1.href = "https://magnr.com";
  }
  
- if(i1.src = 'http://www.evergencompany.co/Images/ads/magnr.png'){
-  i1.src = "http://www.evergencompany.co/Images/ads/moon.png";
- }else{
-  i1.src = "http://www.evergencompany.co/Images/ads/magnr.png";
- }
+  if ( newsrc == "moon.png" ) {
+    document.images["pic"].src = "http://www.evergencompany.co/Images/ads/moon.png";
+    document.images["pic"].alt = "Moon";
+    newsrc  = "magnr.png";
+  }
+  else {
+    document.images["pic"].src = "http://www.evergencompany.co/Images/ads/magnr.png";
+    document.images["pic"].alt = "Magnr";
+    newsrc  = "magnr.png";
+  }
  
 }
