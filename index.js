@@ -1,6 +1,6 @@
 var a1 = document.getElementById("1");
 
-var img1 = document.getElementById("image");
+var img1 = document.getElementById("adImg");
 
 var div1 = document.getElementById("left");
 
