@@ -1,10 +1,10 @@
 var a1 = document.getElementById("1");
 
-var img1 = document.getElementById("adImg");
+var i1 = document.getElementById("adImg");
 
-var div1 = document.getElementById("left");
+var d1 = document.getElementById("left");
 
-div1.addEventListener("click", leftChange1);
+d1.addEventListener("click", leftChange1);
 
 function leftChange1(){
  
@@ -14,10 +14,10 @@ function leftChange1(){
   a1.href = "https://magnr.com";
  }
  
- if(img1.src = 'http://www.evergencompany.co/Images/ads/magnr.png'){
-  img1.src = "http://www.evergencompany.co/Images/ads/moon.png";
+ if(i1.src = 'http://www.evergencompany.co/Images/ads/magnr.png'){
+  i1.src = "http://www.evergencompany.co/Images/ads/moon.png";
  }else{
-  img1.src = "http://www.evergencompany.co/Images/ads/magnr.png";
+  i1.src = "http://www.evergencompany.co/Images/ads/magnr.png";
  }
  
 }
