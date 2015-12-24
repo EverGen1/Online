@@ -2,8 +2,6 @@ var tab1 = document.getElementById("tabEnter");
 
 var body = document.getElementById("body");
 
-tab1.addEventListener("click", tab1Show);
-
 function tab1Show(){
  if( body.text = "<ul id='bodyList'>",
                  " <h2>",
