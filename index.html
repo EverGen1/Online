@@ -48,17 +48,23 @@
      <li><input id="tabEnter" type="image" src="http://www.evergencompany.co/Images/menu/enter.png" onclick="tab1Show()"></li>
     </ul>
     <script type="text/javascript">
-     var tab1 = document.getElementById("tabEnter");
 
-     var divBody = document.getElementById("divBod");
+     var divBody = document.getElementById("divBod1");
 
      function tabEnter(){
-      divBody.innerHTML = text;
+      divBody.innerHTML = "<div class='games'>
+                            <div align='center'>
+                             <h1><a id='enterGames' href='#enter/games'><font color='white'>Games</font></a></h1>
+                            </div>
+                            <div>
+                             <p>Games made by EverGenCo SoftWare, and EverGenCo Labs.</p>
+                            </div>
+                           </div>;
      }
     </script>
    </div>
   </div>
-  <div class="divBod">
+  <div class="divBod1">
    <h1>Welcome!</h1>
    <p>First off thank-you for visiting our website, and we hope your stay will be nice. With our company we provide simple games, and apps. As well with great tips to help finance better.</p>
    <p>With that said we would also like to announce that there will be that selected products will be with 90% of money made from those selected products will be sent to a special savings for the charity.</p>
