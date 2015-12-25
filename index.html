@@ -47,7 +47,19 @@
     <ul id="topList">
      <li><input id="tabEnter" type="image" src="http://www.evergencompany.co/Images/menu/enter.png" onclick="tab1Show()"></li>
     </ul>
-    <script src="http://www.evergencompany.co/tabs.js"></script>
+    <script type="text/javascript">
+     var tab1 = document.getElementById("tabEnter");
+
+     var body = document.getElementById("body");
+
+     function tab1Show(){
+      body text = "<ul id='enterMenu'>",
+                  " <h2>",
+                  "  <li><a href="#enterGames">Games</a></li>",
+                  " </h2>",
+                  "</ul>";
+     }
+    </script>
    </div>
   </div>
   <div class="body">
@@ -63,6 +75,5 @@
     </p>
    </ul>
   </div>
-  <script src="http://www.evergencompany.co/tabs.js">
  </body>
 </html>
