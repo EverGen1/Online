@@ -1,8 +1,7 @@
 <DOCTYPE! html>
 <html>
  <head>
-  <title>EverGenCompany</title>
-  <meta name="viewport" content="width=display-width, initial-scale=1, user-scaleable=0">
+  <title>EverGenCo</title>
   <style>
    body{
     font-family:Helvetica;
@@ -11,62 +10,26 @@
    div.head{
     background-color:white;
    }
-   img#logo{
+   img#imgLogo{
     max-width:100%;
-    max-height:50%;
-   }
-   ul#mainMenu li{
-    display:inline;
-   }
-   input#tabEnter{
-    width:25%;
-    height:10%;
-   }
-   p{
-    text-indent:50px;
-   }
-   ul#bottomList li{
-    display:inline;
-    width:50px;
+    min-width:50%;
    }
   </style>
  </head>
  <body>
   <div class="head">
    <div class="logo" align="center">
-    <a href="http://www.evergencompany.co"><img id="logo" src="http://www.evergencompany.co/Images/logo.png"></a>
+    <a href="http://www.evergencompany.co">
+     <img src="http://www.evergencompany.co/Images/logo.png">
+    </a>
    </div>
    <div class="ads">
-    <div class="adDisplay" align="center">
-     <div class="ads" align="center">
-      <a id="1" href="http://moonbit.co.in/?ref=1728b39e8002"><img id="adImg" src="http://www.evergencompany.co/Images/ads/moon.png"></a>
-     </div>
-    </div>
    </div>
    <div class="menu">
-    <ul id="topList">
-     <li><input id="tabEnter" type="image" src="http://www.evergencompany.co/Images/menu/enter.png" onclick="tabEnter()"></li>
+    <ul id="mainMenu">
+     <li><input id="Enter" type="image" src="http://www.evergencompany.co/Images/menu/enter.png" onclick="divChange1()></li>
     </ul>
    </div>
-  </div>
-  <script type="text/javascript">
-   var divBody = document.getElementById("divBod1");
-   function tabEnter(){
-    divBody.innerHTML = "<div class='games'><div align='center'><h1><a id='enterGames' href='#enter/games'><font color='white'>Games</font></a></h1></div><div><p>Games made by EverGenCo SoftWare, and EverGenCo Labs.</p></div></div>";
-   }
-  </script>
-  <div class="divBod1">
-   <h1>Welcome!</h1>
-   <p>First off thank-you for visiting our website, and we hope your stay will be nice. With our company we provide simple games, and apps. As well with great tips to help finance better.</p>
-   <p>With that said we would also like to announce that there will be that selected products will be with 90% of money made from those selected products will be sent to a special savings for the charity.</p>
-  </div>
-  <div>
-   <ul id="bottomList">
-    <p>
-     <li><a href="LICENSE.txt">License</a></li>
-     <li id="bottomList2"><a href="" onClick="bottomListClick1()">FAQ</a></li>
-    </p>
-   </ul>
   </div>
  </body>
 </html>
