@@ -41,7 +41,7 @@
     </ul>
    </div>
   </div>
-  <div class="divBody">
+  <div class="divBody" visibility="hidden">
    <ul id="bottomList" ><h2><li><a id="a1" href=""><input id="in1"type="image" src=""></input></li><li><input id="in2" type="image" src=""></li><li><a id="a3" href=""><input id="in3" type="image" src=""></li></ul>
   </div>
   <script type="text/javascript">
@@ -49,6 +49,7 @@
    var f2 = document.getElementById("in2");
    var f3 = document.getElementById("in3");
    function divChange1(){
+    document.getElementById("divBody").style.visibility = "visible";
     f1.src = ;
     f2.src = ;
     f3.src = ;
