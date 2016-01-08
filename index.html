@@ -10,7 +10,16 @@
    div.head{
     background-color:white;
    }
+   div.subBody{
+    background-color:white;
+   }
    input#Enter{
+    max-width:50%;
+    min-width:10%;
+    max-height:50%;
+    min-height:10%;
+   }
+   input#Store{
     max-width:50%;
     min-width:10%;
     max-height:50%;
@@ -42,10 +51,42 @@
    </div>
   </div>
   <div id="divBody">
+   <div class="choice1">
+    <div align="center"><h1><font id="font1a" color="white"></font></h1></div>
+    <div id="divBody1"><p><font id="font1b" color="white"></font></p></div>
+   </div>
+   <div class="choice2">
+    <ul id="main">
+     <li><input id="input1" type="image" src="" onclick="subMenu1"></input></li>
+     <li><input id="input2" type="image" src="" onclick="subMenu2"></input></li>
+     <li><input id="input3" type="image" src="" onclick="subMenu3"></input></li>
+     <li><input id="input4" type="image" src="" onclick="subMenu4"></input></li>
+    </ul>
+   </div>
+   <div class="subBody">
+    <div class="choice1">
+     <div align="center"><font color="72"><font id="sfont1"></font></font></div>
+     <p><font id="sfont2"></font></p>
+    </div>
+   </div>
   </div>
   <script type="text/javascript">
-   var enterBody = ""
+   var cP = document.getElementById("contentPage");
+   
+   var f1 = document.getElementById("font1a");
+   var f2 = document.getElementById("font1b");
+   
+   var in1 = document.getElementById("input1");
+   var in2 = document.getElementById("input2");
+   var in3 = document.getElementById("input3");
+   var in4 = document.getElementById("input4");
    function divChange1(){
+    
+    in1.src = "http://evergen1.github.io/Apps/AppStore/Images/logo.png";
+    in2.src = "http://evergen1.github.io/Music/Images/logo.png";
+    in3.src = "http://evergen1.github.io/Video/Images/logo.png";
+   }
+   function subMenu1(){
     
    }
   </script>
@@ -54,5 +95,6 @@
     <h1>Simple Name, for A Simple Name</h1>
    </div>
   </div>
+  <div id="contentPage" style="visibility:hidden;"></div>
  </body>
 </html>
