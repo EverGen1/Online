@@ -57,10 +57,10 @@
    </div>
    <div id="choice2">
     <ul id="main">
-     <li><input id="input1" type="image" src="" onclick="subMenu1"></input></li>
-     <li><input id="input2" type="image" src="" onclick="subMenu2"></input></li>
-     <li><input id="input3" type="image" src="" onclick="subMenu3"></input></li>
-     <li><input id="input4" type="image" src="" onclick="subMenu4"></input></li>
+     <li><input id="input1" type="image" src="" onclick=""></input></li>
+     <li><input id="input2" type="image" src="" onclick=""></input></li>
+     <li><input id="input3" type="image" src="" onclick=""></input></li>
+     <li><input id="input4" type="image" src="" onclick=""></input></li>
     </ul>
    </div>
    <div class="subBody">
@@ -95,10 +95,12 @@
     document.getElementById("choice2").style.visibility = "visible";
 
     in1.src = "http://evergen1.github.io/Apps/AppStore/Images/logo.png";
+    in1.onclick("enterMenu1");
+
     in2.src = "http://evergen1.github.io/Music/Images/logo.png";
     in3.src = "http://evergen1.github.io/Video/Images/logo.png";
    }
-   function subMenu1(){
+   function enterMenu1(){
     window.open("https://evergen1.github.io/Apps/AppStore");
    }
   </script>
