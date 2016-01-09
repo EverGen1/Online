@@ -51,11 +51,11 @@
    </div>
   </div>
   <div id="divBody">
-   <div class="choice1">
+   <div id="choice1">
     <div align="center"><h1><font id="font1a" color="white"></font></h1></div>
     <div id="divBody1"><p><font id="font1b" color="white"></font></p></div>
    </div>
-   <div class="choice2">
+   <div id="choice2">
     <ul id="main">
      <li><input id="input1" type="image" src="" onclick="subMenu1"></input></li>
      <li><input id="input2" type="image" src="" onclick="subMenu2"></input></li>
@@ -64,7 +64,7 @@
     </ul>
    </div>
    <div class="subBody">
-    <div class="choice1">
+    <div id="subChoice1">
      <div align="center"><font color="72"><font id="sfont1"></font></font></div>
      <p><font id="sfont2"></font></p>
     </div>
@@ -78,11 +78,25 @@
    var in3 = document.getElementById("input3");
    var in4 = document.getElementById("input4");
    function setUp(){
-    document.getElementById("choice1").style.visibility = "hidden";
-    document.getElementById("choice2").style.visibility = "hidden";
+    if(document.getElementById("choice1").style.visibility = "hidden"){
+     document.getElementById("choice1").style.visibility = "visible";
+    }else{
+     document.getElementById("choice1").style.visibility = "hidden";
+    }
+    if(document.getElementById("choice2").style.visibility = "hidden"){
+     document.getElementById("choice2").style.visibility = "visible";
+    }else{
+     document.getElementById("choice2").style.visibility = "hidden";
+    }
    }
    function divChange1(){
-    document.getElementById("choice2".style.visibility = "visible";
+    document.getElementById("contentPage").innerHTML = "enter";
+
+    if(document.getElementById("choice2").style.visibility = "visible"){
+     document.getElementById("choice2").style.visibility = "hidden";
+    }else{
+     document.getElementById("choice2").style.visibility = "visible";
+    }
 
     in1.src = "http://evergen1.github.io/Apps/AppStore/Images/logo.png";
     in2.src = "http://evergen1.github.io/Music/Images/logo.png";
