@@ -51,67 +51,21 @@
    </div>
   </div>
   <div id="divBody">
-   <div id="choice1">
-    <div align="center"><h1><font id="font1a" color="white"></font></h1></div>
-    <div id="divBody1"><p><font id="font1b" color="white"></font></p></div>
-   </div>
-   <div id="choice2">
-    <ul id="main">
-     <li><input id="input1" type="image" src="" onclick=""></input></li>
-     <li><input id="input2" type="image" src="" onclick=""></input></li>
-     <li><input id="input3" type="image" src="" onclick=""></input></li>
-     <li><input id="input4" type="image" src="" onclick=""></input></li>
-    </ul>
-   </div>
-   <div class="subBody">
-    <div id="subChoice1">
-     <div align="center"><font color="72"><font id="sfont1"></font></font></div>
-     <p><font id="sfont2"></font></p>
-    </div>
+   <div id="homeBody">
+    <div align="center">About</div>
+    <p>First of all<b>WELCOME!</b> to EverGenCo, and we are glad you have found this site. We want to help others, and by doing so we need yoour help.<a href="Info.txt">!!!For more info click here!!!</a>.
    </div>
   </div>
   <script type="text/javascript">
-   var cP = document.getElementById("contentPage");
-   
-   var in1 = document.getElementById("input1");
-   var in2 = document.getElementById("input2");
-   var in3 = document.getElementById("input3");
-   var in4 = document.getElementById("input4");
+   var dHome = document.getElementById("homeBody");
+   var dEnter = document.getElementById("enterBody");
+   var dAbout = document.getElementById("aboutBody");
+   var dAccount = document.getElemengById("accountBody");
+
    function setUp(){
-    if(document.getElementById("choice1").style.visibility = "hidden"){
-     document.getElementById("choice1").style.visibility = "visible";
-    }else{
-     document.getElementById("choice1").style.visibility = "hidden";
-    }
-    if(document.getElementById("choice2").style.visibility = "hidden"){
-     document.getElementById("choice2").style.visibility = "visible";
-    }else{
-     document.getElementById("choice2").style.visibility = "hidden";
-    }
-   }
-   function divChange1(){
-    document.getElementById("contentPage").innerHTML = "enter";
-
-    document.getElementById("choice2").style.visibility = "visible";
-
-    in1.src = "https://evergen1.github.io/Apps/AppStore/Images/logo.png";
-    in1.onclick = function(){
-     window.open("https://evergen1.github.io/Apps/AppStore");
-    }
-
-    in2.src = "https://evergen1.github.io/Music/Images/logo.png";
-    in2.onclick = function(){
-     window.open("https://evergen1.github.io/Music");
-    }
-
-    in3.src = "https://evergen1.github.io/Video/Images/logo.png";
-    in3.onclick = function(){
-     window.open("https://evergen1.github.io/Video");
-    }
-    in4.src = "https://evergen1.github.io/Book/Images/logo.png";
-    in4.onclick = function(){
-     window.open("https://evergen1.github.io/Book");
-    }
+    dHome.style.visibility = "collapse";
+    dEnter.style.visibility = "collapse";
+    dAbout.style.visibility = "collapse";
    }
   </script>
   <div id="modo">
