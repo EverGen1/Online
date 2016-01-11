@@ -58,23 +58,102 @@
    </div>
    <div id="enterBody">
     <ul id="bottomList">
-     <li><input type="image" src="https://evergen1.github.io/Apps/AppStore/Images/logo.png" onclick="appAppStore()"></li>
+     <li><input type="image" src="https://evergen1.github.io/Online/Apps/AppStore/Images/logo.png" onclick="appAppStore()"></li>
+     <li><input type="image" src="https://evegen1.github.io/Online/Apps/"></li>
     </ul>
    </div>
    <div id="aboutBody">
     <div align="center"><h2><b>What We Do?</b></h2></div>
+    <p>
+     <b>We raise money</b>
+     <ul>
+      <li>By selling virtual, and physical products.</li>
+      <li>Ads</li>
+      <li>Study Books</li>
+     </ul>
+    </p>
+    <p>
+     <b>Innovate The Future</b>
+     <ul>
+      <li>The future of banking</li>
+      <li>New entertainment</li>
+      <li>High quality way to make life simple</li>
+     </ul>
+    </p>
+    <p>
+     <b>How do we help</b>
+     We are currently building the new non-profit orginization, and will notify you when it is running via Social Media
+    </p>
+    <h1><b>Thank You for the consideration to help.</b></h1>
+   </div>
+   <div id="accBody">
+    <div id="aLogIn">
+     <form action="database.evergenco.us" method="get()">
+      <input id="in1" type="text" value="UserName" onfocus="focus()">
+      <input id="in2" type="text" value="Password" onfouce="focus()">
+      <input type="submit" value="login">
+     </form>
+    </div>
+    <div id="aSignUp">
+     <form action="database.evergenco.us" method="post()">
+      <input id="in1" type="text" value="UserName" onfocus="focus()">
+      <input id="in2" type="text" value="Password" onfocus="focus()">
+      <input id="in3" type="text" value="EMail" onfocus="focus()">
+      <ipnut id="in4" type="text" value="I.P. Address" onload="getIP()"></ipnut>
+      <input type="submit" value="SignUp">
+     </form>
+    </div>
+    <script type="text/javascript">
+     var i1 = document.getElementById("in1");
+     var i2 = document.getElementById("in2");
+     var i3 = document.getElementById("in3");
+     var i4 = document.getElementById("in4");
+     
+     var word1 = document.getElementById("in1").value;
+     var word2 = document.getElementById("in2").value;
+     var word3 = document.getElementById("in3").value;
+     var word4 = document.getElementById("in4").value;
+     
+     function focus(){
+      if(i1.value = "word1"){
+       i1.value = "";
+      }else{
+       i1.value = "";
+      }
+      
+      if(i2.value = "word2"){
+       i2.value = "";
+      }else{
+       i2.value = "";
+      }
+      
+      if(i3.value = "word3"){
+       i3.value = "";
+      }else{
+       i3.value = "";
+      }
+     }
+     function getIP(){
+    </script>
    </div>
   </div>
   <script type="text/javascript">
    var dHome = document.getElementById("homeBody");
    var dEnter = document.getElementById("enterBody");
    var dAbout = document.getElementById("aboutBody");
+   var dStore = document.getElementById("storeBody");
    var dAcc = document.getElementById("accBody");
-
+   
+   var aLog = document.getElementById("aLogIn");
+   var aSin = document.getElementById("aSignUp");
+   
    function setUp(){
     dHome.style.visibility = "visible";
     dEnter.style.visibility = "collapse";
     dAbout.style.visibility = "collapse";
+    dStore.style.visibility = "collapse";
+    aLog.style.visibility = "collapse";
+    aSin.style.visibility = "collapse"
    }
 
    function divChange1(){
