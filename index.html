@@ -1,36 +1,4 @@
 <DOCTYPE! html>
- <?php
-  $database = 'sql5.freedatabase.com';
-  $username = 'sql5103302';
-  $password = 'HQlk9PnlKM';
-  $hostname = 'sql5103302';
-  
-  $link = mysql_connect($hostname, $username, $password);
-  
-  if($link){
-  	die('Not Connected: ' .mysq_error());
-  }
-  
-  $db_selected = $mysql_select_db($database, $link);
-  
-  if($db_selected){
-  	die('Can\'t Connect: ' mysql_error());
-  }
-  
-  $result = mysql_query('show tabels');
-  
-  if($result){
-   die('Invalid Query: ' mysqyl_error());
-  }
-  
-  if(is_array(mysql_fetch_array($result))){
-   while($row = mysql_fetch_array($result)){
-    echo $row[0] = '<br>';
-   }
-  }else{
-   echo "<p>No Tables Found</p>";
-  }
- ?>
 <html>
  <head>
   <meta name="google-site-verification" content="aY6FWW0SZuDNfZp1y5Y-_DktjcRjVy-Y-PF2euEQBeI" />
@@ -131,7 +99,7 @@
    </div>
    <div id="accBody">
     <div id="aLogIn">
-     <form action="database.php" method="get">
+     <form action="database.html" method="get">
       <ipnut id="in1" type="text" value="UserName" onfocus="value=''">
       <input id="in2" type="text" value="Password" onfouce="value=''">
      </form>
