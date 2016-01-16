@@ -161,8 +161,7 @@
     dEnter.style.visibility = "collapse";
     dAbout.style.visibility = "collapse";
     dStore.style.visibility = "collapse";
-    aLog.style.visibility = "collapse";
-    aSin.style.visibility = "collapse"
+    dAcc.style.visibility = "collapse";
    }
 
    function divChange1(){
@@ -181,7 +180,19 @@
     }
    }
    function divChange2(){
+    document.getElementById("Page").innerHTML = "Page Account";
     
+    if(document.getElementById("Page").innerHTML = "Page Account"){
+     dHome.style.visibility = "collapse";
+    }else{
+     dHome.style.visibility = "visible";
+    }
+    
+    if(document.getElementById("Page").innerHTML = "Page Account"){
+     dAcc.style.visibility = "visble";
+    }else{
+     dAcc.style.visibility = "collapse";
+    }
    }
    
    function appAppStore(){
