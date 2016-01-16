@@ -99,9 +99,10 @@
    </div>
    <div id="accBody">
     <div id="aLogIn">
-     <form action="database.html" method="get">
-      <ipnut id="in1" type="text" value="UserName" onfocus="value=''">
-      <input id="in2" type="text" value="Password" onfouce="value=''">
+     <form action="database.php" method="get">
+      <input id="in1" type="text" name="user_name" value="UserName" onfocus="value=''">
+      <input id="in2" type="text" name="password" value="Password" onfocus="value=''">
+      <input type="submit" value="LogIn">
      </form>
     </div>
     <div id="aSignUp">
@@ -112,6 +113,38 @@
       <input type="submit" value="SignUp">
      </form>
     </div>
+    <script type="text/javascript">
+     var i1 = document.getElementById("in1");
+     var i2 = document.getElementById("in2");
+     var i3 = document.getElementById("in3");
+     var i4 = document.getElementById("in4");
+     
+     var word1 = document.getElementById("in1").value;
+     var word2 = document.getElementById("in2").value;
+     var word3 = document.getElementById("in3").value;
+     var word4 = document.getElementById("in4").value;
+     
+     function focus(){
+      if(i1.value = "word1"){
+       i1.value = "";
+      }else{
+       i1.value = "";
+      }
+      
+      if(i2.value = "word2"){
+       i2.value = "";
+      }else{
+       i2.value = "";
+      }
+      
+      if(i3.value = "word3"){
+       i3.value = "";
+      }else{
+       i3.value = "";
+      }
+     }
+     function getIP(){
+    </script>
    </div>
   </div>
   <script type="text/javascript">
