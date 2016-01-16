@@ -8,16 +8,28 @@
   $link = mysql_connect($hostname, $username, $password);
   
   if($link){
-  	die('Not Connected:' .mysq_error());
+  	die('Not Connected: ' .mysq_error());
   }
   
   $db_selected = $mysql_select_db($database, $link);
   
   if($db_selected){
-  	die('Can\'t Connect:' mysql_error());
+  	die('Can\'t Connect: ' mysql_error());
   }
   
-  result =
+  $result = mysql_query('show tabels');
+  
+  if($result){
+   die('Invalid Query: ' mysqyl_error());
+  }
+  
+  if(is_array(mysql_fetch_array($result))){
+   while($row = mysql_fetch_array($result)){
+    echo $row[0] = '<br>';
+   }
+  }else{
+   echo = "<p>No Tables Found</p>";
+  }
  ?>
 <html>
  <head>
