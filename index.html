@@ -1,4 +1,24 @@
 <DOCTYPE! html>
+ <?php
+  $database = 'sql5.freedatabase.com';
+  $username = 'sql5103302';
+  $password = 'HQlk9PnlKM';
+  $hostname = 'sql5103302';
+  
+  $link = mysql_connect($hostname, $username, $password);
+  
+  if($link){
+  	die('Not Connected:' .mysq_error());
+  }
+  
+  $db_selected = $mysql_select_db($database, $link);
+  
+  if($db_selected){
+  	die('Can\'t Connect:' mysql_error());
+  }
+  
+  result =
+ ?>
 <html>
  <head>
   <meta name="google-site-verification" content="aY6FWW0SZuDNfZp1y5Y-_DktjcRjVy-Y-PF2euEQBeI" />
@@ -99,54 +119,15 @@
    </div>
    <div id="accBody">
     <div id="aLogIn">
-     <form action="database.php" method="get">
-      <input id="in1" type="text" name="user_name" value="UserName" onfocus="value=''">
-      <input id="in2" type="text" name="password" value="Password" onfocus="value=''">
-      <input type="submit" value="LogIn">
-     </form>
     </div>
     <div id="aSignUp">
-<<<<<<< HEAD
-     <?php
-      $info = $_REQUEST['UserName', 'Password', 'Email'];
-      $to = "nextrevoulution@gmail.com";
-      $subject = "register";
-      $email_address = $_REQUEST['Email'];
-     
-      if(empty($info)){
-       head("Location: index.html")
-      }else{
-       mail($to, "$subject", "From:". $email_address);
-     ?>
      <form method="post">
       <input id="in1" type="text" name="UserName" value="UserName" onfocus="value=''">
       <input id="in2" type="text" name="Password" value="Password" onfocus="value=''">
       <input id="in3" type="text" name="Email" value="EMail" onfocus="value=''">
-=======
-     <form method="post">
-      <input id="in1" type="text" name="user_name" value="UserName" onfocus="value=''">
-      <input id="in2" type="text" name="password" value="Password" onfocus="value=''">
-      <input id="in3" type="text" name="email_address" value="EMail" onfocus="value=''">
->>>>>>> origin/gh-pages
       <input type="submit" value="SignUp">
-      <?php
-       $info = $_REQUEST['username', 'password', 'email_adress'];
-    
-       $email = $_REQUEST['email_address'];
-   
-       $subject = 'Register';
-
-       $to = 'nextrevoulution@gmail.com';
-
-       mail($to, "$subject", $info, "From:" . $email);
-      ?>
      </form>
-<<<<<<< HEAD
-     <?php
-      }
-     ?>
-=======
->>>>>>> origin/gh-pages
+     <?php include "register.php"?>
     </div>
    </div>
   </div>
@@ -165,7 +146,8 @@
     dEnter.style.visibility = "collapse";
     dAbout.style.visibility = "collapse";
     dStore.style.visibility = "collapse";
-    dAcc.style.visibility = "collapse";
+    aLog.style.visibility = "collapse";
+    aSin.style.visibility = "collapse"
    }
 
    function divChange1(){
@@ -183,22 +165,6 @@
      dEnter.style.visibility = "collapse";
     }
    }
-   function divChange2(){
-    document.getElementById("Page").innerHTML = "Page Account";
-    
-    if(document.getElementById("Page").innerHTML = "Page Account"){
-     dHome.style.visibility = "collapse";
-    }else{
-     dHome.style.visibility = "visible";
-    }
-    
-    if(document.getElementById("Page").innerHTML = "Page Account"){
-     dAcc.style.visibility = "visble";
-    }else{
-     dAcc.style.visibility = "collapse";
-    }
-   }
-   
    function appAppStore(){
     window.open("http://app.evergenco.us/AppStore");
    }
