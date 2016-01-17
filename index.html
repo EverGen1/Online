@@ -120,46 +120,28 @@
    <div id="accBody">
     <div id="aLogIn">
     </div>
-    <div id="aSignUp" style="visbility:visible;">
-     <form action="MAILTO:nextrevoulutionever@gmail.com" method="post" enctype="text/plain">
+    <div id="aSignUp">
+     <?php
+      $info = $_REQUEST['UserName', 'Password', 'Email'];
+      $to = "nextrevoulution@gmail.com";
+      $subject = "register";
+      $email_address = $_REQUEST['Email'];
+     
+      if(empty($info)){
+       head("Location: index.html")
+      }else{
+       mail($to, "$subject", "From:". $email_address);
+     ?>
+     <form method="post">
       <input id="in1" type="text" name="UserName" value="UserName" onfocus="value=''">
       <input id="in2" type="text" name="Password" value="Password" onfocus="value=''">
       <input id="in3" type="text" name="Email" value="EMail" onfocus="value=''">
       <input type="submit" value="SignUp">
      </form>
+     <?php
+      }
+     ?>
     </div>
-    <script type="text/javascript">
-     var i1 = document.getElementById("in1");
-     var i2 = document.getElementById("in2");
-     var i3 = document.getElementById("in3");
-     var i4 = document.getElementById("in4");
-     
-     var word1 = document.getElementById("in1").value;
-     var word2 = document.getElementById("in2").value;
-     var word3 = document.getElementById("in3").value;
-     var word4 = document.getElementById("in4").value;
-     
-     function focus(){
-      if(i1.value = "word1"){
-       i1.value = "";
-      }else{
-       i1.value = "";
-      }
-      
-      if(i2.value = "word2"){
-       i2.value = "";
-      }else{
-       i2.value = "";
-      }
-      
-      if(i3.value = "word3"){
-       i3.value = "";
-      }else{
-       i3.value = "";
-      }
-     }
-     function getIP(){
-    </script>
    </div>
   </div>
   <script type="text/javascript">
