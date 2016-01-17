@@ -29,6 +29,6 @@
  }else if( isInjected($email_address)){
   header("Location: error(Inject).html");
  }else{
-  mail( "nextrevoulution@gmail.com", "Register", $email_address, $user_name, $full_name, $password, "From: $email_address" )
+  mail( 'nextrevoulution@gmail.com', 'Register', $email_address, $user_name, $full_name, $password, "From: $email_address" )
  }
 ?>
