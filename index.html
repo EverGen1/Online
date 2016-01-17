@@ -47,6 +47,27 @@
   </style>
  </head>
  <body onload="pageSetUp()">
+  <script type="text/javascript">
+   var dHome = document.getElementById("homeBody");
+   var dEnter = document.getElementById("enterBody");
+   var dAbout = document.getElementById("aboutBody");
+   var dStore = document.getElementById("storeBody");
+   var dAcc = document.getElementById("accBody");
+   
+   var aLog = document.getElementById("aLogIn");
+   var aSin = document.getElementById("aSignUp");
+   
+   function pageSetUp(){
+    dHome.style.visibility = "visible";
+    dEnter.style.visibility = "collapse";
+    dAbout.style.visibility = "collapse";
+    dStore.style.visibility = "collapse";
+    dAcc.style.visibility = "collapse";
+    
+    aLog.style.visibility = "collapse";
+    aSin.style.visibility = "collapse";
+   }
+  </script>
   <div class="head">
    <div class="logo" align="center">
     <a href="http://www.evergenco.us">
@@ -121,17 +142,6 @@
    var aLog = document.getElementById("aLogIn");
    var aSin = document.getElementById("aSignUp");
    
-   function pageSetUp(){
-    dHome.style.visibility = "visible";
-    dEnter.style.visibility = "collapse";
-    dAbout.style.visibility = "collapse";
-    dStore.style.visibility = "collapse";
-    dAcc.style.visibility = "collapse";
-    
-    aLog.style.visibility = "collapse";
-    aSin.style.visibility = "collapse";
-   }
-
    function divChange1(){
     document.getElementById("Page").innerHTML = "Page Enter";
 
