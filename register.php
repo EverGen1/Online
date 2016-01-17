@@ -13,17 +13,31 @@
   echo “Successfully connected to your database…”;
  }
  
- function SignUp(){
+ function NewUser(){
   $user_name = $_POST['user_name'];
   $password = $_POST['password'];
   $email = $_POST['email_address'];
   
-  $query = "INSERT INTO users" (user_name, password, email) VALUES('user_name', 'password', 'email_address');
+  $query = "INSERT INTO users" (user_name, password, email) VALUES('$user_name', '$password', '$email_address');
   
   $data = mysql_query ($query)or die(mysql_error());
   
   if($data){
    echo "You Have Register";
   }
+ }
+ 
+ function SignUp(){
+  if(!empty($_POST)['user_name', 'password', 'email_address'])){
+   $query = mysql_query("SELECT * FROM users WHERE user_name = '$_POST[user_name]'AND password = '$_POST[password]' AND email = '$_POST[email_address]")or die mysql_error());
+   if(!$row = mysql_fetch_array($query)or die(mysql_error())){
+   	NewUser();
+   }else{
+   	echo "SORRY USERNAME ALREADY TAKEN";
+   }
+  }	
+ }
+ if(isset($_POST['sign_up'])){
+  SignUp();	
  }
 ?>
