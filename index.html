@@ -100,7 +100,8 @@
    <div id="accBody">
     <div id="aLogIn">
      <ul id="bottomList">
-      <li><input type="image" src="ever"
+      <li><input type="image" src="http://www.evergenco.us/Images/menu/subAcc/login.png" onclick="accLogIn()"></li>
+      <li><input type="image" src="http://www.evergenco.us/Images/menu/subAcc/signup.png" onclick="accSignUp()"></li>
      </ul>
      <form action="login.php" method="get">
       <input type="text" name="user_name" value="UserName" onfocus="value=''">
@@ -166,6 +167,14 @@
    	 dStore.style.visibility = "collapse";
    	 dEnter.style.visibility = "collapse";
    	}
+   }
+   function accLogIn(){
+   	aLog.style.visibility = "visible";
+   	aSin.style.visibility = "collapse";
+   }
+   function accSignUp(){
+   	aSin.style.visibility = "visible";
+   	aLog.style.visibility = "collapse";
    }
   </script>
   <div id="modo">
