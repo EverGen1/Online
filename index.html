@@ -137,14 +137,16 @@
 
     if(document.getElementById("Page").innerHTML = "Page Enter"){
      dHome.style.visibility = "collapse";
+     dEnter.style.visibility = "visible";
+     dAcc.style.visibility = "collapse";
+     dStore.style.visiblity = "collapse";
+     dAbout.style.visibility = "collapse";
     }else{
      dHome.style.visibility = "visible";
-    }
-
-    if(document.getElementById("Page").innerHTML = "Page Enter"){
-     dEnter.style.visibility = "visible";
-    }else{
      dEnter.style.visibility = "collapse";
+     dAcc.style.visibility = "collapse";
+     dStore.style.visiblity = "collapse";
+     dAbout.style.visibility = "collapse";
     }
    }
    function appAppStore(){
@@ -153,12 +155,18 @@
    function divChange2(){
    	document.getElementById("Page").inneerHTML = "Page Account";
    	
-   	if(document.getElementById("Page").innerHTML = Page Account"){
+   	if(document.getElementById("Page").innerHTML = ""Page Account"){
    	 dHome.style.visibility = "collapse";
    	 dAcc.style.visibility = "visible";
+   	 dAbout.style.visibility = "collapse";
+   	 dStore.style.visibility = "collapse";
+   	 dEnter.style.visibility = "collapse";
    	}else{
    	 dHome.style.visibility = "visible";
    	 dAcc.style.visibility = "collapse";
+   	 dAbout.style.visibility = "collapse";
+   	 dStore.style.visibility = "collapse";
+   	 dEnter.style.visibility = "collapse";
    	}
    }
   </script>
