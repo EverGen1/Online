@@ -15,6 +15,15 @@
  
  function SignUp(){
   $user_name = $_POST['user_name'];
-  $	
+  $password = $_POST['password'];
+  $email = $_POST['email_address'];
+  
+  $query = "INSERT INTO users" (user_name, password, email) VALUES('user_name', 'password', 'email_address');
+  
+  $data = mysql_query ($query)or die(mysql_error());
+  
+  if($data){
+   echo "You Have Register";
+  }
  }
 ?>
