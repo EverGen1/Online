@@ -63,118 +63,19 @@
    </div>
   </div>
   <div id="divBody">
-   <div id="homeBody">
-    <div align="center"><h1>About</h1></div>
-    <p>First of all <b>WELCOME!</b> to EverGenCo, and we are glad you have found this site. We want to help others, and by doing so we need yoour help.<a href="info.txt">!!!For more info click here!!!</a>.
-   </div>
-   <div id="enterBody">
-    <ul id="bottomList">
-     <li><input type="image" src="http://www.evergenco.us/Images/menu/subEnter/appstore.png" onclick="appAppStore()"></li>
-     <li><input type="image" src="http://www.evergenco.us/Images/menu/subEnter/music.png" onclick="appMusicPage()"></li>
-    </ul>
-   </div>
-   <div id="aboutBody">
-    <div align="center"><h2><b>What We Do?</b></h2></div>
-    <p>
-     <b>We raise money</b>
-     <ul>
-      <li>By selling virtual, and physical products.</li>
-      <li>Ads</li>
-      <li>Study Books</li>
-     </ul>
-    </p>
-    <p>
-     <b>Innovate The Future</b>
-     <ul>
-      <li>The future of banking</li>
-      <li>New entertainment</li>
-      <li>High quality way to make life simple</li>
-     </ul>
-    </p>
-    <p>
-     <b>How do we help</b>
-     We are currently building the new non-profit orginization, and will notify you when it is running via Social Media
-    </p>
-    <h1><b>Thank You for the consideration to help.</b></h1>
-   </div>
-   <div id="accBody">  
-    <ul id="bottomList">
-     <li><input type="image" src="http://www.evergenco.us/Images/menu/subAcc/login.png" onclick="accLogIn()"></li>
-     <li><input type="image" src="http://www.evergenco.us/Images/menu/subAcc/signup.png" onclick="accSignUp()"></li>
-    </ul>
-    <div id="aLogIn">
-     <form action="login.php" method="get">
-      <input type="text" name="user_name" value="UserName" onfocus="value=''">
-      <input type="text" name="password" value="Password" onfocus="value=''">
-      <input type="submit" name="log_in" value="LogIn">
-     </form>
-    </div>
-    <div id="aSignUp">
-     <form action="register.php" method="post">
-      <input id="in1" type="text" name="user_name" value="UserName" onfocus="value=''">
-      <input id="in2" type="text" name="password" value="Password" onfocus="value=''">
-      <input id="in3" type="text" name="email_address" value="EMail" onfocus="value=''">
-      <input type="submit" name="sign_up" value="SignUp">
-     </form>
-    </div>
-   </div>
-   <div id="storeBody">
-   </div>
   </div>
-  <script type="text/javascript">
-   var dHome = document.getElementById("homeBody");
-   var dEnter = document.getElementById("enterBody");
-   var dAbout = document.getElementById("aboutBody");
-   var dStore = document.getElementById("storeBody");
-   var dAcc = document.getElementById("accBody");
-   
-   var aLog = document.getElementById("aLogIn");
-   var aSin = document.getElementById("aSignUp");
-   
-   function divChange1(){
-    document.getElementById("Page").innerHTML = "Page Enter";
+  <div id = "subDivBody">
+  </div>
+  <script>
+   var dBody = dovument.getElementById("divBody");
+   var subD = document.getElementById("subDivBody");
+   var h1 = "<div align='center'><ul id='bottomList'>";
+   h1 += "<li><input type='image' src='http://www.evergenco.us/Images/menu/subEnter/appstore.png'>";
+   h1 += "</ul></li>";
+   h1 += "</div>";
 
-    if(document.getElementById("Page").innerHTML = "Page Enter"){
-     dHome.style.visibility = "collapse";
-     dEnter.style.visibility = "visible";
-     dAcc.style.visibility = "collapse";
-     dStore.style.visiblity = "collapse";
-     dAbout.style.visibility = "collapse";
-    }else{
-     dHome.style.visibility = "visible";
-     dEnter.style.visibility = "collapse";
-     dAcc.style.visibility = "collapse";
-     dStore.style.visiblity = "collapse";
-     dAbout.style.visibility = "collapse";
-    }
-   }
-   function appAppStore(){
-    window.open("http://app.evergenco.us/AppStore");
-   }
-   function divChange2(){
-   	document.getElementById("Page").inneerHTML = "Page Account";
-   	
-   	if(document.getElementById("Page").innerHTML = "Page Account"){
-   	 dHome.style.visibility = "collapse";
-   	 dAcc.style.visibility = "visible";
-   	 dAbout.style.visibility = "collapse";
-   	 dStore.style.visibility = "collapse";
-   	 dEnter.style.visibility = "collapse";
-   	}else{
-   	 dHome.style.visibility = "visible";
-   	 dAcc.style.visibility = "collapse";
-   	 dAbout.style.visibility = "collapse";
-   	 dStore.style.visibility = "collapse";
-   	 dEnter.style.visibility = "collapse";
-   	}
-   }
-   function accLogIn(){
-   	aLog.style.visibility = "visible";
-   	aSin.style.visibility = "collapse";
-   }
-   function accSignUp(){
-   	aSin.style.visibility = "visible";
-   	aLog.style.visibility = "collapse";
+   function divChange1(){
+    dBody.innerHTML = h1;
    }
   </script>
   <div id="modo">
@@ -183,26 +84,5 @@
    </div>
   </div>
   <div id="contentPage"><p id="Page">Page Home</p></div>
-  <script type="text/javascript">
-   var dHome = document.getElementById("homeBody");
-   var dEnter = document.getElementById("enterBody");
-   var dAbout = document.getElementById("aboutBody");
-   var dStore = document.getElementById("storeBody");
-   var dAcc = document.getElementById("accBody");
-      
-   var aLog = document.getElementById("aLogIn");   
-   var aSin = document.getElementById("aSignUp");
-    
-   function pageSetUp(){
-    dHome.style.visibility = "visible";
-    dEnter.style.visibility = "collapse";
-    dAbout.style.visibility = "collapse";
-    dStore.style.visibility = "collapse";
-    dAcc.style.visibility = "collapse";
-    
-    aLog.style.visibility = "collapse";
-    aSin.style.visibility = "collapse";
-   }
-  </script>
  </body>
 </html>
