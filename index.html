@@ -64,6 +64,7 @@
   <div id="divBody">
   </div>
   <div id = "subDivBody">
+   <p id="text"></p>
   </div>
   <script>
    var dBody = document.getElementById("divBody");
@@ -110,7 +111,7 @@
     if(document.getElementById("musicSearch").innerHTML = "Maroon 5"){
      subD.innerHTML = musicM5;
     }else{
-     subD.innerHTML = error;	
+     document.getElementById("text").innerHTML = "No Music Found";	
     }
    }
   </script>
