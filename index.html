@@ -69,11 +69,18 @@
   <script>
    var dBody = document.getElementById("divBody");
    var subD = document.getElementById("subDivBody");
+   
    var h1 = "<div align='center'><ul id='bottomList'>";
    h1 += "<li><input type='image' src='http://www.evergenco.us/Images/menu/subEnter/appstore.png' onclick='subEnterApp()'>";
    h1 += "</ul></li>";
    h1 += "<li><input type='image' src='http://www.evergenco.us/Images/menu/subEnter/music.png' onclick='subEnterMusic()'>";
    h1 += "</li>div>";
+   
+   var enterMusic = "<div align='center'><ul id='bottomList'>";
+   enterMusic += "<li><input id='musicSearch' type='text' value='Search Music' onfocus='hide()' style='width:100px;'>";
+   enterMusic += "</li><li>";
+   enterMusic += "<input id='musicSubmit' type='text' value='Search'></li>";
+   enterMusic += "</ul></div>"
 
    function divChange1(){
     document.getElementById("Page").innerHTML = "Entertainment Page";
@@ -82,6 +89,14 @@
 
    function subEnterApp(){
     window.open("http://www.evergenco.us/APPS/AppStore");
+   }
+   function subEnterMusic(){
+   	subD.innerHTML = enterMusic;
+   	function hide(){
+   	 var mSearch = document.getElementById("musicSearch");
+   	 
+   	 mSearch.value = "";
+   	}
    }
   </script>
   <div id="modo">
