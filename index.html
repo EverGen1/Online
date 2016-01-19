@@ -69,7 +69,7 @@
    var dBody = document.getElementById("divBody");
    var subD = document.getElementById("subDivBody");
    
-   var h1 = "<div align='center'><ul id='bottomList'>";
+   var h1 = "<div align='center'><ul style='display:inline;'>";
    h1 += "<li><input type='image' src='http://www.evergenco.us/Images/menu/subEnter/appstore.png' onclick='subEnterApp()'>";
    h1 += "</li><li>";
    h1 += "<input type='image' src='http://www.evergenco.us/Images/menu/subEnter/music.png' onclick='subEnterMusic()'></li>";
@@ -78,8 +78,12 @@
    var enterMusic = "<div align='center'><ul id='bottomList'>";
    enterMusic += "<li><input id='musicSearch' type='text' value='Search Music' onfocus='hide()' style='width:100px;'>";
    enterMusic += "</li><li>";
-   enterMusic += "<input id='musicSubmit' type='submit' value='Search'></li>";
+   enterMusic += "<input id='musicSubmit' type='submit' value='Search' onclick='searchMusic()'></li>";
    enterMusic += "</ul></div>"
+   
+   var musicM5 = "<div aling='center'><ul style='type:none;'>";
+   musicM5 += "<li><input id='MaroonFive' type='image' src='http://www.evergenco.us/Images/music/Maroon5/band.png' onclick='musicMaroon5'>";
+   musicM5 += "</li></ul>"
 
    function divChange1(){
     document.getElementById("Page").innerHTML = "Entertainment Page";
