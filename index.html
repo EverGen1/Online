@@ -69,7 +69,7 @@
    var dBody = document.getElementById("divBody");
    var subD = document.getElementById("subDivBody");
    
-   var h1 = "<div align='center'><ul style='display:inline;'>";
+   var h1 = "<div align='center'><ul id='bottomList'>";
    h1 += "<li><input type='image' src='http://www.evergenco.us/Images/menu/subEnter/appstore.png' onclick='subEnterApp()'>";
    h1 += "</li><li>";
    h1 += "<input type='image' src='http://www.evergenco.us/Images/menu/subEnter/music.png' onclick='subEnterMusic()'></li>";
@@ -81,9 +81,13 @@
    enterMusic += "<input id='musicSubmit' type='submit' value='Search' onclick='searchMusic()'></li>";
    enterMusic += "</ul></div>"
    
-   var musicM5 = "<div aling='center'><ul style='type:none;'>";
+   var musicM5 = "<div align='center'><ul style='type:none;'>";
    musicM5 += "<li><input id='MaroonFive' type='image' src='http://www.evergenco.us/Images/music/Maroon5/band.png' onclick='musicMaroon5'>";
-   musicM5 += "</li></ul>"
+   musicM5 += "</li></ul>";
+   
+   var error = "<div align='center'><p>";
+   error += "No Music Found</p>";
+   error += "</div>"
 
    function divChange1(){
     document.getElementById("Page").innerHTML = "Entertainment Page";
@@ -101,6 +105,15 @@
     var mSearch = document.getElementById("musicSearch");
    	 
     mSearch.value = "";
+   }
+   function searchMusic(){
+   	var mSearch = document.getElementById("musicSearch");
+   	
+    if(mSearch.value = "Maroon 5", "maroon5", "Maroon5", "maroon5"){
+     subD.innerHTML = musicM5;
+    }else{
+     subD.innerHTML = error;	
+    }
    }
   </script>
   <div id="modo">
