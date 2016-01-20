@@ -74,20 +74,20 @@
    h1 += "<input type='image' src='http://www.evergenco.us/Images/menu/subEnter/music.png' onclick='subEnterMusic()'></li>";
    h1 += "</ul></div>";
    
-   var enterMusic = "<div align='center'><ul id='bottomList'>";
-   enterMusic += "<li><input id='musicSearch' type='text' value='Search Music' onfocus='hide()' style='width:100px;'>";
-   enterMusic += "</li><li>";
-   enterMusic += "<input id='musicSubmit' type='submit' value='Search' onclick='searchMusic()'></li>";
-   enterMusic += "</ul></div>"
+    var enterMusic = "<div align='center'><ul id='bottomList'>";
+    enterMusic += "<li><input id='musicSearch' type='text' value='Search Music' onfocus='hide()' style='width:100px;'>";
+    enterMusic += "</li><li>";
+    enterMusic += "<input id='musicSubmit' type='submit' value='Search' onclick='searchMusic()'></li>";
+    enterMusic += "</ul></div>"
    
-   var musicM5 = "<div align='center'><ul>";
-   musicM5 += "<li><input id='MaroonFive' type='image' src='http://www.evergenco.us/Images/music/Maroon5/band.png' onclick='musicMaroon5()'>";
-   musicM5 += "</li></ul>";
-   musicM5 += "</div>";
+    var musicM5 = "<div align='center'><ul>";
+    musicM5 += "<li><input id='MaroonFive' type='image' src='http://www.evergenco.us/Images/music/Maroon5/band.png' onclick='musicMaroon5()'>";
+    musicM5 += "</li></ul>";
+    musicM5 += "</div>";
    
-   var error = "<div align='center'><p>";
-   error += "No Music Found</p>";
-   error += "</div>";
+    var error = "<div align='center'><p>";
+    error += "No Music Found</p>";
+    error += "</div>";
    
    var h2 = "<div align='center'><ul id='bottomList'>";
    h2 += "<li><input type='button' value='BitBank' onclick='accBitBank()'>";
@@ -95,6 +95,11 @@
    h2 += "<input type='button' value='AppStore' onclick='accAppStore()'>";
    h2 += "</li></ul>";
    h2 += "</div>";
+   
+    var BitBank = "<div align='center'><form action='bitbank.php' action='post'>";
+    BitBank += "<input type='text' name='full_name' value='Full Name' onfocus='hide()'>";
+    BitBank += "<input type='text' name='email_address' value='EMail' onfocus='hide()'>";
+    BitBank += "</form></div>";
    
    function home(){
     dBody.innerHTML = "";
@@ -128,6 +133,9 @@
    function divChange2(){
     document.getElementById("Page").innerHTML = "Account Page";
     dBody.innerHTML = h2;
+   }
+   function accBitBank(){
+    subD.innerHTML = BitBank;
    }
   </script>
   <div id="modo">
