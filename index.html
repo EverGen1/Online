@@ -48,7 +48,7 @@
  <body>
   <div class="head">
    <div class="logo" align="center">
-    <a href="http://www.evergenco.us">
+    <input type="image" src="http://www.evergenco.us/logo.png" onclick="home()">
      <img id="imgLogo" src="http://www.evergenco.us/Images/logo.png">
     </a>
    </div>
@@ -96,6 +96,11 @@
    h2 += "<input type='button' value='AppStore' onclick='accAppStore()'>";
    h2 += "</li></ul>";
    h2 += "</div>";
+   
+   function home(){
+    dBody.innerHTML = "";
+    subD.innerHTML = "";
+   }
 
    function divChange1(){
     document.getElementById("Page").innerHTML = "Entertainment Page";
