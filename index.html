@@ -83,13 +83,14 @@
    var musicM5 = "<div align='center'><ul>";
    musicM5 += "<li><input id='MaroonFive' type='image' src='http://www.evergenco.us/Images/music/Maroon5/band.png' onclick='musicMaroon5()'>";
    musicM5 += "</li></ul>";
+   musicM5 += "</div>";
    
    var error = "<div align='center'><p>";
    error += "No Music Found</p>";
    error += "</div>";
    
    var h2 = "<div align='center'><ul id='bottomList'>";
-   h2 += "<li><input type='button' value='BitBank' onclick='accBitBank()'>";
+   h2 += "<li><button value='BitBank' onclick='accBitBank()'>";
    h2 += "</li><li>";
    h2 += "<input type='button' value='AppStore' onclick='accAppStore()'>";
    h2 += "</li></ul>";
@@ -125,7 +126,7 @@
     }
    }
    function divChange2(){
-    document.getElmementByID("Page").innerHTML = "Account Page";
+    document.getElementById("Page").innerHTML = "Account Page";
     dBody.innerHTML = h2;
    }
   </script>
