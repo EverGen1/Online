@@ -82,13 +82,20 @@
    enterMusic += "<input id='musicSubmit' type='submit' value='Search' onclick='searchMusic()'></li>";
    enterMusic += "</ul></div>"
    
-   var musicM5 = "<div align='center'><ul style='type:none;'>";
+   var musicM5 = "<div align"='center'><ul style='type:none;'>";
    musicM5 += "<li><input id='MaroonFive' type='image' src='http://www.evergenco.us/Images/music/Maroon5/band.png' onclick='musicMaroon5'>";
    musicM5 += "</li></ul>";
    
    var error = "<div align='center'><p>";
    error += "No Music Found</p>";
    error += "</div>";
+   
+   var h2 = "<div align='center'><ul id='bottomList'>";
+   h2 += "<li><input type='button' value='BitBank' onclick='accBitBank()'>";
+   h2 += "</li><li>";
+   h2 += "<input type='button' value='AppStore' onclick='accAppStore()'>";
+   h2 += "</li></ul>";
+   h2 += "</div>";
 
    function divChange1(){
     document.getElementById("Page").innerHTML = "Entertainment Page";
