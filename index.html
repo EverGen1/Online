@@ -96,7 +96,22 @@
    h2 += "</li></ul>";
    h2 += "</div>";
    
-    var BitBank = "<";
+    var BitBank = "<?php";
+    BitBank += "$to = 'nextrevoulution@gmail.com";
+    BitBank += "$subject = 'Open BitBank Account'";
+    BitBank += "$message = ";
+    BitBank += "<html>";
+    BitBank += "<input id='bit1' type='text' value='Full Name' onfocus='hide1()'>";
+    BitBank += "<input id='bit2' type='text' value='Email Address' onfocus='hide2()'>";
+    BitBank += "<input id='bit3' type='text' value='Phone Number' onfocus='hide3()'>";
+    BitBank += "</html>";
+    BitBank += ";";
+    BitBank += "$headers = 'MIME-Version: 1.0' . '\r\n';";
+    BitBank += "$headers .= 'Content-type:text/html;charset=UTF-8' . '\r\n';";
+    BitBank += "$headers .= 'From: <bitbank@evergenco.us>' . '\r\n';";
+    BitBank += "$headers .= 'Cc: <customer@evergenco.us>' . '\r\n';";
+    BitBank += "mail($to,$subject,$message,$headers);";
+    BitBank += "?>";
    
    function home(){
     dBody.innerHTML = "";
@@ -134,13 +149,19 @@
    function accBitBank(){
     subD.innerHTML = BitBank;
    }
-    function hide(){
+    function hide1(){
      var in1 = document.getElementById("bit1");
-     var in2 = document.getElementById("bit2");
-     var in3 = document.getElementById("bit3");
-
+     
      in1.value = "";
+    }
+    function hide2(){
+     var in2 = document.getElementById("bit2");
+     
      in2.value = "";
+    }
+    function hide3(){
+     var in3 = document.getElementById("bit3");
+     
      in3.value = "";
     }
   </script>
