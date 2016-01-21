@@ -4,6 +4,15 @@
  $full_name = check_input($_POST['full_name'], "Enter Your Name");
  $email_address = check_input($_POST['email_address'], "Enter Your EMail");
  $phone_number = check_input($_POST['phone_number'], "EnterYour Phone Number");
+ $subject = "BitBank Account Creation";
+
+ $message = "
+  Name: $full_name
+  EMail: $email_address
+  Phone Number: $phone_number
+ ";
+
+ mail($webMaster, $subject, $message);
 
 function check_input($data, $problem='')
 {
