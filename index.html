@@ -97,8 +97,9 @@
    h2 += "</div>";
    
     var BitBank = "<div align='center'><form action='bitbank.php' action='post'>";
-    BitBank += "<input type='text' name='full_name' value='Full Name' onfocus='hide()'>";
-    BitBank += "<input type='text' name='email_address' value='EMail' onfocus='hide()'>";
+    BitBank += "<input id='bit1' type='text' name='full_name' value='Full Name' onfocus='hide()'>";
+    BitBank += "<input id='bit2' type='text' name='email_address' value='EMail' onfocus='hide()'>";
+    BitBank += "<input id='bit3' type='text' name='phone_number' value='Phone Number' onfocus='hide()'>; 
     BitBank += "<input type='submit' name='submit' value='Open Now'>";
     BitBank += "</form></div>";
    
@@ -138,6 +139,15 @@
    function accBitBank(){
     subD.innerHTML = BitBank;
    }
+    function hide(){
+     var in1 = document.getElementById("bit1");
+     var in2 = document.getElementById("bit2");
+     var in3 = document.getElementById("bit3");
+
+     in1.value = "";
+     in2.value = "";
+     in3.value = "";
+    }
   </script>
   <div id="modo">
    <div align="center">
