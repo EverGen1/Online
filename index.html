@@ -128,11 +128,11 @@
    
     var bit = "<div align='center'>";
     bit += "<form action=bitbank.php' method='post'>";
-    bit += "<input type='text' name='full_name' value='Full Name' onfocus='hide1()'>";
-    bit += "<input type='text' name='user_name' value='User Name' onfocus='hide2()'>";
-    bit += "<input type='text' name='password' value='Password' onfocus='hide3()'>";
-    bit += "<input type='text' name='email_address' value='E-Mail' onfocus='hide4()'>";
-    bit += "<input type='submit' value='Open Now!'>";
+    bit += "<input id='in1' type='text' name='full_name' value='Full Name' onfocus='hide1()'>";
+    bit += "<input id='in2' type='text' name='user_name' value='User Name' onfocus='hide2()'>";
+    bit += "<input id='in3' type='text' name='password' value='Password' onfocus='hide3()'>";
+    bit += "<input id='in4' type='text' name='email_address' value='E-Mail' onfocus='hide4()'>";
+    bit += "<input id='in5' type='submit' value='Open Now!'>";
     
     var not = "<div align='center'>";
     not += "<p>Not Yet Avaliable</p>";
@@ -146,6 +146,29 @@
      function bitbank(){
       subD.innerHTML = bit;
      }
+      function hide1(){
+       var in1 = document.getElementById("in1");
+       
+       in1.value = "";
+      }
+      
+      function hide2(){
+       var in2 = document.getElementById("in2");
+       
+       in2.value = "";
+      }
+      
+      function hide3(){
+       var in3 = document.getElementById("in3");
+       
+       in3.value = "";
+      }
+      
+      function hide4(){
+       var in4 = document.getElementById("in4");
+       
+       in4.value = "";
+      }
      
      function wedev(){
       subD.innerHTML = not;
