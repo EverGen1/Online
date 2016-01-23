@@ -128,9 +128,17 @@
    
     var bit = "<div align='center'>";
     bit += "<form action=bitbank.php' method='post'>";
-    bit += "<input type='text' name='full_name' value='Full Name' onclick='hide1()'>";
-    bit += "<input type='text' name='user_name' value='User Name' onclick='hide2()'>";
-    bit += "<input type='text' name='password"
+    bit += "<input type='text' name='full_name' value='Full Name' onfocus='hide1()'>";
+    bit += "<input type='text' name='user_name' value='User Name' onfocus='hide2()'>";
+    bit += "<input type='text' name='password' value='Password' onfocus='hide3()'>";
+    bit += "<input type='text' name='email_address' value='E-Mail' onfocus='hide4()'>";
+    bit += "<input type='submit' value='Open Now!'>";
+    
+    function divChange2(){
+     document.getElementById("contentPage").innerHTML = "Account Page";
+     
+     subD.innerHTML = h2;
+    }
    
   </script>
   <div id="modo">
