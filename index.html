@@ -38,7 +38,11 @@
    }
    img#imgLogo{
     max-width:100%;
+<<<<<<< HEAD
     min-width:1%;
+=======
+    min-width:10%;
+>>>>>>> origin/gh-pages
    }
    ul#bottomList li{
     display:inline;
@@ -48,9 +52,7 @@
  <body>
   <div class="head">
    <div class="logo" align="center">
-    <a href="http://www.evergenco.us">
-     <img id="imgLogo" src="http://www.evergenco.us/Images/logo.png">
-    </a>
+    <input type="image" src="http://www.evergenco.us/Images/logo.png" onclick="home()">
    </div>
    <div class="ads">
    </div>
@@ -76,19 +78,50 @@
    h1 += "<input type='image' src='http://www.evergenco.us/Images/menu/subEnter/music.png' onclick='subEnterMusic()'></li>";
    h1 += "</ul></div>";
    
-   var enterMusic = "<div align='center'><ul id='bottomList'>";
-   enterMusic += "<li><input id='musicSearch' type='text' value='Search Music' onfocus='hide()' style='width:100px;'>";
-   enterMusic += "</li><li>";
-   enterMusic += "<input id='musicSubmit' type='submit' value='Search' onclick='searchMusic()'></li>";
-   enterMusic += "</ul></div>"
+    var enterMusic = "<div align='center'><ul id='bottomList'>";
+    enterMusic += "<li><input id='musicSearch' type='text' value='Search Music' onfocus='hide()' style='width:100px;'>";
+    enterMusic += "</li><li>";
+    enterMusic += "<input id='musicSubmit' type='submit' value='Search' onclick='searchMusic()'></li>";
+    enterMusic += "</ul></div>"
    
-   var musicM5 = "<div align='center'><ul style='type:none;'>";
-   musicM5 += "<li><input id='MaroonFive' type='image' src='http://www.evergenco.us/Images/music/Maroon5/band.png' onclick='musicMaroon5'>";
-   musicM5 += "</li></ul>";
+    var musicM5 = "<div align='center'><ul>";
+    musicM5 += "<li><input id='MaroonFive' type='image' src='http://www.evergenco.us/Images/music/Maroon5/band.png' onclick='musicMaroon5()'>";
+    musicM5 += "</li></ul>";
+    musicM5 += "</div>";
    
-   var error = "<div align='center'><p>";
-   error += "No Music Found</p>";
-   error += "</div>";
+    var error = "<div align='center'><p>";
+    error += "No Music Found</p>";
+    error += "</div>";
+   
+   var h2 = "<div align='center'><ul id='bottomList'>";
+   h2 += "<li><input type='button' value='BitBank' onclick='accBitBank()'>";
+   h2 += "</li><li>";
+   h2 += "<input type='button' value='AppStore' onclick='accAppStore()'>";
+   h2 += "</li></ul>";
+   h2 += "</div>";
+   
+    var BitBank = "<?php";
+    BitBank += "$to = 'nextrevoulution@gmail.com";
+    BitBank += "$subject = 'Open BitBank Account'";
+    BitBank += "$message = '";
+    BitBank += "<html>";
+    BitBank += "<input id='bit1' type='text' value='Full Name' onfocus='hide1()'>";
+    BitBank += "<input id='bit2' type='text' value='Email Address' onfocus='hide2()'>";
+    BitBank += "<input id='bit3' type='text' value='Phone Number' onfocus='hide3()'>";
+    BitBank += "<input type='submit' value='Open Now' onclick='send()'>";
+    BitBank += "</html>';";
+    BitBank += "$headers = 'MIME-Version: 1.0' . '\r\n';";
+    BitBank += "$headers .= 'Content-type:text/html;charset=UTF-8' . '\r\n';";
+    BitBank += "$headers .= 'From: <bitbank@evergenco.us>' . '\r\n';";
+    BitBank += "$headers .= 'Cc: <customer@evergenco.us>' . '\r\n';";
+    BitBank += "function send(){";
+    BitBank += "mail($to,$subject,$message,$headers);";
+    BitBank += "}?>";
+   
+   function home(){
+    dBody.innerHTML = "";
+    subD.innerHTML = "";
+   }
 
    function divChange1(){
     document.getElementById("Page").innerHTML = "Entertainment Page";
@@ -114,6 +147,28 @@
      document.getElementById("text").innerHTML = "No Music Found";	
     }
    }
+   function divChange2(){
+    document.getElementById("Page").innerHTML = "Account Page";
+    dBody.innerHTML = h2;
+   }
+   function accBitBank(){
+    subD.innerHTML = BitBank;
+   }
+    function hide1(){
+     var in1 = document.getElementById("bit1");
+     
+     in1.value = "";
+    }
+    function hide2(){
+     var in2 = document.getElementById("bit2");
+     
+     in2.value = "";
+    }
+    function hide3(){
+     var in3 = document.getElementById("bit3");
+     
+     in3.value = "";
+    }
   </script>
   <div id="modo">
    <div align="center">
