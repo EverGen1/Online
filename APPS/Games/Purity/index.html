@@ -1,4 +1,4 @@
-﻿<DOCTYPE! html>
+<DOCTYPE! html>
 <html>
  <head>
   <style>
@@ -10,14 +10,16 @@
    }
   </style>
  </head>
- <body>
+ <body onload="begin()">
   <div align="center">
-   <canvas style="width:10000px;height:1000px;border:1px solid black;" onload="begin()">
+   <canvas id="gameCanvas" style="width:10000px;height:1000px;border:1px solid black;">
    <script type="text/javascript">
-    var grey = "rgb(200,200,200)";
+    var canvas = document.getElementById("gameCanvas");
+    var ctx = canvas.getContext('3d');
     
-    var beginMap = [
-
+    function begin(){
+     ctx.fillStyle = "rgb(200,0,0);"
+    }
    </script>
   </div>
   <p><a href="https://dev.opera.com/articles/3d-games-with-canvas-and-raycasting-part-1/">Go To</a></p>
