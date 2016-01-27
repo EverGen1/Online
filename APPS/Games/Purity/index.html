@@ -11,6 +11,7 @@
   </style>
  </head>
  <body onload="begin()">
+  <img id="bP" src="Images/lv1/default.png" style="visibility:hidden;width:100px;height:100px;">
   <div align="center">
    <canvas id="gameCanvas" style="width:10000px;height:600px;border:1px solid black;">
    <script type="text/javascript">
@@ -18,8 +19,7 @@
     var ctx = canvas.getContext('2d');
     
     function begin(){
-     var beginPlayer = new Image();
-     img.src = "Images/lv1/default.png";
+     var beginPlayer = document.getElementById("bP");
      
      ctx.drawImage(beginPlayer, 1, 1, 100, 100);
     }
