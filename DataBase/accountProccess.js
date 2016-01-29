@@ -1,8 +1,8 @@
 var bit = document.getElementById("BitBank");
- var in1 = document.getElementById("in1").innerHTML;
- var in2 = document.getElementById("in2").innerHTML;
- var in3 = document.getElementById("in3").innerHTML;
- var in4 = document.getElementById("in4").innerHTML;
+ var in1 = document.getElementById("in1").value;
+ var in2 = document.getElementById("in2").value;
+ var in3 = document.getElementById("in3").value;
+ var in4 = document.getElementById("in4").value;
  var rowB = insertRow(0);
   var cell1 = insertCell(0);
   var cell2 = insertCell(1);
@@ -10,5 +10,8 @@ var bit = document.getElementById("BitBank");
   var cell4 = insertCell(4);
   
 function proccess1(){
- row  
+ cell1.innerHTML = in1;
+ cell2.innerHTML = in2;
+ cell3.innerHTML = in3;
+ cell4.innerHTML = in4;
 }
