@@ -12,35 +12,31 @@
     width:1000px;
     height:600px;
    } 
-   div#ceiling{
-    background-color:aqua;
-    width:1000px;
-    height:300px;   
-   }
-   div#floor{
-    background-color:lime;
-    width:1000px;
-    height:300px;   
-   }
    canvas#minimap{
     background-color:white;
     width:150px;
     height:80px;   
    }
+   canvas#game{
+    width:1000px;
+    height:600px;   
+   }
   </style>
  </head>
- <body>
+ <body onload="gameStart()">
    <div align="center"><font size="12" color="red">ImPurity</font></div>
    <div align="right"><canvas id="minimap"></canvas></div>
    <div id="screen" align="center">
-    <div id="ceiling">
-    </div>
-    <div id="floor">
+     <canvas id="game"></canvas>
     </div>
    </div>
    <script type="text/javascript">
     var canvas = document.getElementById("minimap");
-    var ctxt = canvas.getContext('2d')
+    var ctxt = canvas.getContext('2d');
+    
+    function gameStart(){
+        
+    }
    </script>
  </body>
 </html>
