@@ -1,34 +1,18 @@
 <DOCTYPE! html>
 <html>
  <head>
+  <title>ImPurity</title>
   <style>
-   canvas{
-    max-width:100%;
-    min-width:.001%;
-    max-height:100%;
-    min-height:.001%;
-   }
   </style>
  </head>
- <body onload="begin()">
-  <div align="center">
-   <canvas id="gameCanvas" style="width:10000px;height:600px;border:1px solid black;">
-   <script type="text/javascript">
-    var canvas = document.getElementById("gameCanvas");
-    var ctx = canvas.getContext('2d');
-    
-    function begin(){
-     var begP = "http://www.evergenco.us/APPS/Games/Purity/Images/default.png";
-     
-     var beginPlayer = new Image();
-     beginPlayer.src = begP;
-     beginPlayer.style.width = 100;
-     beginPlayer.style.height = 100;
-     
-     ctx.drawImage(beginPlayer, 100, 100);
-    }
-   </script>
-  </div>
-  <p><a href="https://dev.opera.com/articles/3d-games-with-canvas-and-raycasting-part-1/">Go To</a></p>
+ <body>
+   <div align="center"><font size="12" color="red">ImPurity</font></div>
+   <div align="right"><canvas id="minimap"></canvas></div>
+   <div id="screen" align="center">
+    <div id="ceiling">
+    </div>
+    <div id="floor">
+    </div>
+   </div>
  </body>
 </html>
