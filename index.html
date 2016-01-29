@@ -128,7 +128,7 @@
    h2 += "<p>All accounts will be controled through your e-mail, so keep it safe. Guide lines for the accounts will be found here at <a href='accounts.html'>Account Info</a></p>"
    
     var bit = "<div align='center'>";
-    bit += "<form action='MAILTO:bitbankegc@gmail.com' method='post'>";
+    bit += "<form onsubmit='proccess1()'>";
     bit += "<input id='in1' type='text' name='full_name' value='Full Name' onfocus='hide1()'>";
     bit += "<input id='in2' type='text' name='user_name' value='User Name' onfocus='hide2()'>";
     bit += "<input id='in3' type='text' name='password' value='Password' onfocus='hide3()'>";
@@ -192,6 +192,8 @@
       subD.innerHTML = not;
      }
   </script>
+  <script src='DataBase/accountProccess.js' type='text/javascript'>
+  </script
   <div id="modo">
    <div align="center">
     <h2>Simple Name, for A Simple Name</h2>
