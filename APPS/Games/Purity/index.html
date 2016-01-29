@@ -35,6 +35,8 @@
     var canvas2 = document.getElementById("game")''
     var ctxt = canvas.getContext('2d');
     
+    var gl;
+    
     function gameStart(){
      initGL(canvas);
      initShaders();
@@ -43,6 +45,11 @@
      loadWorld();
     }
     
+    function initGL(canvas){
+     gl = canvas2.getContext("WebGL");
+     gl.viewportWidth =  canvas2.width;
+     gl.viewportHeight = canvas2.height;  
+    }
     function initBuffers(){
      var    
     }
