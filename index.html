@@ -127,14 +127,14 @@
    h2 += "</li></ul></div>";
    
     var bit = "<div align='center'>";
-    bit += "<ul id='bottomList'>";
-    bit += "<li><input id='in1' type='text' value='Full Name' onfocus='hide1()'></li>";
-    bit += "<li><input id='in2' type='text' value='User Name' onfocus='hide2()'></li>";
-    bit += "<li><input id='in3' type='text' value='Password' onfocus='hide3()'></li>";
-    bit += "<li><input id='in4' type='text' value='E-Mail' onfocus='hide4()'></li>";
-    bit += "<li><input type='submit' value='Open Now!' onclick='send()'></li>";
-    bit += "</ul></div>";
-
+    bit += "<form id=''theForm'>";
+    bit += "<input type='text' value='Full Name' onfocus='hide()'>";
+    bit += "<input type='text' value='User Name' onfocus='hide()'>";
+    bit += "<input type='text' value='Password' onfocus='hide()'>";
+    bit += "<input type='text' value='E-Mail' onfocus='hide()'>";
+    bit += "<input type='button' value='Open Now!' onclick='send()'>";
+    bit += "</form></div>";
+    
     var com = "<p>Please Open On Computers Only, and Make Sure You Have Scripts Enabled</p>";
     
     var not = "<div align='center'>";
