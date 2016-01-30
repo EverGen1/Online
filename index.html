@@ -155,20 +155,14 @@
       var in2 = document.getElementById("in2");
       var in3 = document.getElementById("in3");
       var in4 = document.getElementById("in4");
-      var nRow = insertRow(1);
-      var c1 = nRow.insertCell(0);
-      var c2 = nRow.insertCell(1);
-      var c3 = nRow.insertCell(2);
-      var c4 = nRow.insertCell(3);
+      var tr = "<tr id='w'>";
+      tr += "<td id='c1'></td>";
+      tr += "<td id='c2'></td>";
+      tr += "<td id='c3'></td>";
+      tr += "<td id='c4'></td>";
+      tr += "</tr>";
       
-      
-      c1.innerHTML = in1.value;
-      c2.innerHTML = in2.value;
-      c3.innerHTML = in3.value;
-      c4.innerHTML = in4.value;
-      nRow.innerHTML = c1, c2, c3, c4;
-      
-      window.location.href = url?TheValues='"nRow.innerHTML"';                
+      window.location.href = "url?TableRow='"+document.tablerow.w.value+"'& TableValue='"document.tablerow.w.c1.innerHTML='in1.value'+document.tablerow.w.c2.innerHTML='in2.value'+document.tablerow.w.c3.innerHTML='in3.value'+document.tablerow.w.c4.innerHTML='in4.value'+"'";                
      }
      
      function wedev(){
