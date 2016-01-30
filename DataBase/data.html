@@ -11,13 +11,18 @@
    }
   </style>
  </head>
- <body>
+ <body onload="newData()">
   <table id="BitBank">
    <th>Full Name</th>
    <th>User Name</th>
    <th>Password</th>
    <th>Email</th>
   </table>
+  <script type="text/javascript">
+   function newData(){
+    mySearch = location.search.substr(1);   
+   }
+  </script>
  </body>
 </html>
 </DOCTYPE>

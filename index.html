@@ -150,10 +150,25 @@
       subD.innerHTML = bit;   
      }
      function send(){
-      var url = "http://www.evergenco.us/DataBase/data.html";
+      var url = "DataBase/data.html";
+      var in1 = document.getElementById("in1");
+      var in2 = document.getElementById("in2");
+      var in3 = document.getElementById("in3");
+      var in4 = document.getElementById("in4");
+      var nRow = insertRow(0);
+      var c1 = nRow.insertCell(0);
+      var c2 = nRow.insertCell(1);
+      var c3 = nRow.insertCell(2);
+      var c4 = nRow.insertCell(3);
       
-      var bb = url.search.substring(1);
-      var bitban = bb.      
+      
+      c1.innerHTML = in1.value;
+      c2.innerHTML = in2.value;
+      c3.innerHTML = in3.value;
+      c4.innerHTML = in4.value;
+      nRow.innerHTML = c1, c2, c3, c4;
+      
+      submit(window.open(url?MyValue.value='"nRow"'));                
      }
      
      function wedev(){
