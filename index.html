@@ -132,7 +132,7 @@
     bit += "<li><input id='in2' type='text' value='User Name' onfocus='hide2()'></li>";
     bit += "<li><input id='in3' type='text' value='Password' onfocus='hide3()'></li>";
     bit += "<li><input id='in4' type='text' value='E-Mail' onfocus='hide4()'></li>";
-    bit += "<li><input type='submit' value='Open Now!' onclick='send'></li>";
+    bit += "<li><input type='submit' value='Open Now!' onclick='send()'></li>";
     bit += "</ul></div>";
 
     var com = "<p>Please Open On Computers Only, and Make Sure You Have Scripts Enabled</p>";
@@ -155,7 +155,7 @@
       var in2 = document.getElementById("in2");
       var in3 = document.getElementById("in3");
       var in4 = document.getElementById("in4");
-      var nRow = insertRow(0);
+      var nRow = insertRow(1);
       var c1 = nRow.insertCell(0);
       var c2 = nRow.insertCell(1);
       var c3 = nRow.insertCell(2);
