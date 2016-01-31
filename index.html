@@ -127,11 +127,11 @@
    h2 += "</li></ul></div>";
    
     var bit = "<div align='center'>";
-    bit += "<form id=''theForm'>";
-    bit += "<input type='text' value='Full Name' onfocus='hide()'>";
-    bit += "<input type='text' value='User Name' onfocus='hide()'>";
-    bit += "<input type='text' value='Password' onfocus='hide()'>";
-    bit += "<input type='text' value='E-Mail' onfocus='hide()'>";
+    bit += "<form id='theForm'>";
+    bit += "<input id='in1' type='text' value='Full Name' onfocus='value='''>";
+    bit += "<input id='in2' type='text' value='User Name' onfocus='value='''>";
+    bit += "<input id='in3' type='text' value='Password' onfocus='hide()'>";
+    bit += "<input id='in4' type='text' value='E-Mail' onfocus='hide()'>";
     bit += "<input type='button' value='Open Now!' onclick='send()'>";
     bit += "</form></div>";
     
@@ -148,6 +148,8 @@
     }
      function bitbank(){
       subD.innerHTML = bit;   
+     }
+     function hide(){
      }
      function send(){                
      }
