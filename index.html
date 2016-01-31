@@ -167,7 +167,8 @@
       in4.value = "";       
      }
      function send(){   
-      window.location.href = "DataBase/data.html?oneValue.value=document.getElementById("in1").value+twoValue.value=document.getElementById("in2").value+threeValue.value=document.getElementById("in3").vaule+fourValue.value=document.getElementById("in4").value";
+      var url = "DataBase/bitData.html";
+      window.location.href = url?Values.value="formValues.value='+document.forms.bitForm.in1.value+' & '+document.forms.bitForm.in2.value+' & '+document.forms.bitForm.in3.value+' & 'document.forms.bitForm.in4.value+'";
      }
      
      function wedev(){
