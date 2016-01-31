@@ -128,10 +128,10 @@
    
     var bit = "<div align='center'>";
     bit += "<form id='theForm'>";
-    bit += "<input id='in1' type='text' value='Full Name' onfocus='hide()'>";
-    bit += "<input id='in2' type='text' value='User Name' onfocus='hide()'>";
-    bit += "<input id='in3' type='text' value='Password' onfocus='hide()'>";
-    bit += "<input id='in4' type='text' value='E-Mail' onfocus='hide()'>";
+    bit += "<input id='in1' type='text' value='Full Name' onfocus='hide1()'>";
+    bit += "<input id='in2' type='text' value='User Name' onfocus='hide2()'>";
+    bit += "<input id='in3' type='text' value='Password' onfocus='hide3()'>";
+    bit += "<input id='in4' type='text' value='E-Mail' onfocus='hide4()'>";
     bit += "<input type='button' value='Open Now!' onclick='send()'>";
     bit += "</form></div>";
     
@@ -147,11 +147,25 @@
      dBody.innerHTML = h2;
     }
      function bitbank(){
-      subD.innerHTML = bit;   
-     }
-     function hide(){
+      subD.innerHTML = bit;
       var id = document.getElementsByTagName("input").id;
+      var in1 = id.in1;
+      var in2 = id.in2;
+      var in3 = id.in3;
+      var in4 = id.in4;  
+     }
+     function hide1(){
+      in1.vaule = "";
+     }
+     function hide2(){  
+      in2.value = "";       
+     }
+     function hide3(){
+      in3.value = "";         
      } 
+     function hide4(){  
+      in4.value = "";       
+     }
      function send(){                
      }
      
