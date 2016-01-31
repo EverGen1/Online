@@ -127,11 +127,11 @@
    h2 += "</li></ul></div>";
    
     var bit = "<div align='center'>";
-    bit += "<form id='theForm'>";
-    bit += "<input id='in1' type='text' value='Full Name' onfocus='hide1()'>";
-    bit += "<input id='in2' type='text' value='User Name' onfocus='hide2()'>";
-    bit += "<input id='in3' type='text' value='Password' onfocus='hide3()'>";
-    bit += "<input id='in4' type='text' value='E-Mail' onfocus='hide4()'>";
+    bit += "<form id='bitForm'>";
+    bit += "<input id='in1' type='text' name='Full' value='Full Name' onfocus='hide1()'>";
+    bit += "<input id='in2' type='text' name='User' value='User Name' onfocus='hide2()'>";
+    bit += "<input id='in3' type='text' name='Pass' value='Password' onfocus='hide3()'>";
+    bit += "<input id='in4' type='text' name='Mail' value='E-Mail' onfocus='hide4()'>";
     bit += "<input type='button' value='Open Now!' onclick='send()'>";
     bit += "</form></div>";
     
@@ -166,7 +166,8 @@
      function hide4(){  
       in4.value = "";       
      }
-     function send(){                
+     function send(){   
+      window.location.href = "http://www.evergenco.us/DataBase/data.html?MyValue.value='"+document.form.bitForm.MyValue.value+"'&MyTest.value='"+document.forms.bitForm.in1.value+","+document.forms.bitForm.in2.value+","+document.forms.bitForm.in3.value+","+document.forms.bitForm.in4.value+"';
      }
      
      function wedev(){
