@@ -127,11 +127,11 @@
    h2 += "</li></ul></div>";
    
     var bit = "<div align='center'>";
-    bit += "<form id='bitForm'>";
-    bit += "<input id='in1' type='text' value='Full Name' onfocus='hide1()'>";
-    bit += "<input id='in2' type='text' value='User Name' onfocus='hide2()'>";
-    bit += "<input id='in3' type='text' value='Password' onfocus='hide3()'>";
-    bit += "<input id='in4' type='text' value='E-Mail' onfocus='hide4()'>";
+    bit += "<form name='bitForm'>";
+    bit += "<input name='in1' type='text' value='Full Name' onfocus='hide1()'>";
+    bit += "<input name='in2' type='text' value='User Name' onfocus='hide2()'>";
+    bit += "<input name='in3' type='text' value='Password' onfocus='hide3()'>";
+    bit += "<input name='in4' type='text' value='E-Mail' onfocus='hide4()'>";
     bit += "<input type='button' value='Open Now!' onclick='send()'>";
     bit += "</form></div>";
     
@@ -168,7 +168,7 @@
      }
      function send(){   
       var url = "DataBase/bitData.html";
-      window.location.href = "DataBase/bitData.html?newRow='+document.forms.bitForm+'& rowValues='+document.forms.bitForm.values+'";
+      window.location.href = "DataBase/bitData.html?newRow.value='";
      }
      
      function wedev(){
