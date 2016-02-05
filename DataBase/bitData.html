@@ -12,35 +12,19 @@
   </style>
  </head>
  <body onload="newData()">
-  <table name="bitBank" id="BitBank">
+  <table name="BitBank" id="BitBank">
    <th>Full Name</th>
    <th>User Name</th>
    <th>Password</th>
    <th>Email</th>
   </table>
+  <p id="input1">input1</p>
   <script type="text/javascript">
    function newData(){
      var x = 0;
-     var win = window.location.search.substr(1).split(&);
-    }
-    function newRow(){
-     var table = document.getElementById("BitBank");
-     var nRow = table.insertRow(0);
-     var c1 = nRow.insertCell(0);
-     var c2 = nRow.insertCell(1);
-     var c3 = nRow.insertCell(2);
-     var c4 = nRow.insertCell(3);
-     
-     var win = window.location.href;
-     var in1 = win.substr("input1.value");
-     var in2 = win.substr("input2.value");
-     var in3 = win.substr("input3.vaule");
-     var in4 = win.substr("input4.value");
-     
-     c1.innerHTML = in1;
-     c2.innerHTML = in2;
-     c3.innerHTML = in3;
-     c4.innerHTML = in4;
+     var win = window.location.search;
+     var in1 = win.substring(14, 24);
+     document.getElementById("input1").innerHTML = in1;
     }
   </script>
  </body>
