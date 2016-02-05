@@ -23,7 +23,7 @@
    function newData(){
      var x = 0;
      var win = window.location.search;
-     var in1 = win.substring("input1.value");
+     var in1 = win.substring();
      var in2 = win.substring(input2.value)
      var re = in1.replace("%20", " ");
      re += in2.replace("%20", " ");
@@ -36,7 +36,7 @@
      info += in4;
      
      var inputs = document.getElementById("inputs").innerHTML;
-     inputs = info
+     inputs = win;
     }
   </script>
  </body>
