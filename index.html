@@ -168,7 +168,8 @@
      }
      function send(){   
       var url = "DataBase/bitData.html";
-      window.location.href = url;
+      var new = window.location.href = url;
+      new += "?first.value='"+document.getElementById("in1").value+"'";
      }
      
      function wedev(){
