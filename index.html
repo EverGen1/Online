@@ -168,12 +168,12 @@
      }
      function send(){   
       var url = "DataBase/bitData.html";
-      var win = window.location.href;
-      win += "DataBase/bitData.html";
+      var win += url+;
       win += "?input1.value='"+document.forms.bitForm.in1.value+"'";
       win += "input2.value='"+document.forms.bitForm.in2.value+"'";
       win += "input3.value='"+document.forms.bitForm.in3.value+"'";
-      win += "input4.value='"+document.forms.bitForm.in4.value+"'";
+      win += "input.4value='"+document.forms.bitForm.in4.value+"'";
+      window.location.href = win;
      }
      
      function wedev(){
