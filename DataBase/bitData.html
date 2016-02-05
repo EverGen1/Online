@@ -19,13 +19,18 @@
    <th>Email</th>
   </table>
   <p id="inputs"></p>
+  <p id="length"></p>
   <script type="text/javascript">
    function newData(){
      var win = window.location.search;
      var winRe = win.replace("%20", " ");
+     var len = winRe.length;
      
      var inputs = document.getElementById("inputs");
      inputs.innerHTML = winRe;
+     
+     var length = document.getElementById("length");
+     length.innerHTML = len;
     }
   </script>
  </body>
