@@ -18,14 +18,25 @@
    <th>Password</th>
    <th>Email</th>
   </table>
-  <p id="input1">input1</p>
+  <p id="inputs">input1</p>
   <script type="text/javascript">
    function newData(){
      var x = 0;
      var win = window.location.search;
-     var in1 = win.substring(15, 26);
-     var r1 = in1.replace("%20", " ");
-     document.getElementById("input1").innerHTML = r1;
+     var in1 = win.substring(input1.value);
+     var in2 = win.substring(input2.value)
+     var re = in1.replace("%20", " ");
+     re += in2.replace("%20", " ");
+     re += in3.replace("%20", " ");
+     re += in4.replace("$20", " ");
+     
+     var info = in1;
+     info += in2;
+     info += in3;
+     info += in4;
+     
+     var inputs = document.getElementById("inputs").innerHTML;
+     inputs = info
     }
   </script>
  </body>
