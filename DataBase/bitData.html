@@ -20,13 +20,28 @@
   </table>
   <script type="text/javascript">
    function newData(){
-    mySearch = location.search.substr(1);
      var x = 0;
-     var mySearch = window.location.search.substr(1).split(&);
-     for(x=0;x<mySearch.length;x++){
-      eval("document.tables.BitBank."+mySearch[x]);
-     }
-   }
+     var win = window.location.search.substr(1).split(&);
+    }
+    function newRow(){
+     var table = document.getElementById("BitBank");
+     var nRow = table.insertRow(0);
+     var c1 = nRow.insertCell(0);
+     var c2 = nRow.insertCell(1);
+     var c3 = nRow.insertCell(2);
+     var c4 = nRow.insertCell(3);
+     
+     var win = window.location.href;
+     var in1 = win.substr("input1.value");
+     var in2 = win.substr("input2.value");
+     var in3 = win.substr("input3.vaule");
+     var in4 = win.substr("input4.value");
+     
+     c1.innerHTML = in1;
+     c2.innerHTML = in2;
+     c3.innerHTML = in3;
+     c4.innerHTML = in4;
+    }
   </script>
  </body>
 </html>
