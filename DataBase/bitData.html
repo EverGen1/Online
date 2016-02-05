@@ -22,11 +22,10 @@
   <script type="text/javascript">
    function newData(){
      var win = window.location.search;
+     var winRe = win.replace("%20", " ");
      
      var inputs = document.getElementById("inputs");
-     inputs.innerHTML = win;
-     
-     inputs.replace("%20", " ");
+     inputs.innerHTML = winRe;
     }
   </script>
  </body>
