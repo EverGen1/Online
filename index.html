@@ -128,10 +128,10 @@
    
     var bit = "<div align='center'>";
     bit += "<form name='bitForm'>";
-    bit += "<input name='in1' type='text' value='Full Name' onfocus='hide1()'>";
-    bit += "<input name='in2' type='text' value='User Name' onfocus='hide2()'>";
-    bit += "<input name='in3' type='text' value='Password' onfocus='hide3()'>";
-    bit += "<input name='in4' type='text' value='E-Mail' onfocus='hide4()'>";
+    bit += "<input name='in1' id='in1' type='text' value='Full Name' onfocus='hide1()'>";
+    bit += "<input name='in2' id='in2' type='text' value='User Name' onfocus='hide2()'>";
+    bit += "<input name='in3' id='in3' type='text' value='Password' onfocus='hide3()'>";
+    bit += "<input name='in4' id='in4' type='text' value='E-Mail' onfocus='hide4()'>";
     bit += "<input type='button' value='Open Now!' onclick='send()'>";
     bit += "</form></div>";
     
@@ -155,16 +155,16 @@
       var in4 = id.in4;  
      }
      function hide1(){
-      in1.value = "";
+      document.getElementById("in1").value = "";
      }
      function hide2(){  
-      in2.value = "";       
+      document.getElementById("in2").value = "";       
      }
      function hide3(){
-      in3.value = "";         
+      document.getElementById("in3").value = "";         
      } 
      function hide4(){  
-      in4.value = "";       
+      document.getElementById("in4").value = "";       
      }
      function send(){   
       var url = "DataBase/bitData.html";
