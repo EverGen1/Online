@@ -168,7 +168,8 @@
      }
      function send(){   
       var url = "DataBase/bitData.html";
-      var win = "DataBase/bitData.html";
+      var win = window.location.href;
+      win += "DataBase/bitData.html";
       win += "?input1.value='"+document.forms.bitForm.in1.value+"'";
       win += "input2.value='"+document.forms.bitForm.in2.value+"'";
       win += "input3.value='"+document.forms.bitForm.in3.value+"'";
