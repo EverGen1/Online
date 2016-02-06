@@ -44,10 +44,15 @@
      objects += "<li id='i3'></li>";
      objects += "<li id='i4'></li>";
     list.innerHTML = objects;
-     var s = no1.split("&"); 
+     var s = no1.split("&");
+     var st1 = s.substr(1);
+     
+     var l1 = st1;
+      var l1Fix1 = l1.replace("'", "");
+      var l1Fix2 = l1Fix1.replace("'", "");
      
      var i1 = document.getElementById("i1");
-      i1.innerHTML = l1Fix1;
+      i1.innerHTML = l1Fix2;
      var i2 = document.getElementById("i2");
      var i3 = document.getElementById("i3");
      var i4 = document.getElementById("i4");      
