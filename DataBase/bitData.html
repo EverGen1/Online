@@ -26,10 +26,13 @@
    function newData(){
     var x = 0;
     var win = window.location.search.substr(1).split("&");
-    var len = win.length;
+    var fix = win.replace("%20", " ");
+    fix += win.replace("input1.value=", "");
+    fix += win.replace("input2.value=", "");
+    fix += win.replace("input3.value=", "");
      
     var sub = document.getElementById("sub");
-    sub.innerHTML = win; 
+    sub.innerHTML = fix; 
    }
   </script>
  </body>
