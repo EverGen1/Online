@@ -32,9 +32,10 @@
     var reFix2 = reFix1.replace("input2.value=", "");
     var reFix3 = reFix2.replace("input3.value=", "");
     var reFix4 = reFix3.replace("input4.value=", "");
+    var no? = reFix4.replace("?", "");
 
     var sub = document.getElementById("sub");
-    sub.innerHTML = reFix4; 
+    sub.innerHTML = no?; 
    }
   </script>
  </body>
