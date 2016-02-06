@@ -34,12 +34,9 @@
     var reFix3 = reFix2.replace("input3.value=", "");
     var reFix4 = reFix3.replace("input4.value=", "");
     var no1 = reFix4.replace("?", "");
-    var no2 = no1.replace("&", " ");
-    var no3 = no2.replace("&", " ");
-    var no4 = no3.replace("&", " ");
 
     var sub = document.getElementById("sub");
-    sub.innerHTML = no4;
+    sub.innerHTML = no1;
     
     var  list = document.getElementById("list");
      var objects = "<li id='i1'></li>";
@@ -47,8 +44,8 @@
      objects += "<li id='i3'></li>";
      objects += "<li id='i4'></li>";
     list.innerHTML = objects;
-     var l1 = no4.substr(1);
-      var l1Fix1 = l1.split(" ");
+     var s = no1.split("&"); 
+     
      var i1 = document.getElementById("i1");
       i1.innerHTML = l1Fix1;
      var i2 = document.getElementById("i2");
