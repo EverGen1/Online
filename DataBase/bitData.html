@@ -37,7 +37,7 @@
      var length = document.getElementById("length");
      length.innerHTML = len;
      
-     var splitVer = winRe.split("&");
+     var splitVer = winRe.search.substr(1).split("&");
      var split = document.getElementById("split");
      
      var list = "<li id='put1'></li>";
@@ -45,10 +45,10 @@
      list += "<li id='put3'></li>";
      list += "<li id='put4'></li>";
      
-     var i1 = splitVer.substring(1);
-     var i2 = splitVer.substring(2);
-     var i3 = splitVer.substring(3);
-     var i4 = splitVer.substring(4);
+     var i1 = splitVer(1);
+     var i2 = splitVer(2);
+     var i3 = splitVer(3);
+     var i4 = splitVer(4);
      
      split.innerHTML = list;
       var p1 = document.getElementById("put1");
