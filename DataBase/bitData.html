@@ -21,15 +21,16 @@
    <th>Password</th>
    <th>Email</th>
   </table>
+  <p id="sub"></p>
   <script type="text/javascript">
    function newData(){
     var x = 0;
     var win = window.location.search.substr(1).split("&");
     var len = win.length;
-     for (; x < len; x++) {
-      eval("document.table.BitBank." +win[x]);   
-     }
-    }
+     
+    var sub = document.getElementById("sub");
+    sub.innerHTML = win; 
+   }
   </script>
  </body>
 </html>
