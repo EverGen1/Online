@@ -28,6 +28,7 @@
     var win = window.location.search;
     var fix = win.replace("%20", " ");
     var newFix = fix.replace("%20", " ");
+    var reFix = newFix.replace("'", " ");
 
     var sub = document.getElementById("sub");
     sub.innerHTML = newFix; 
