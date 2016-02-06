@@ -20,6 +20,8 @@
   </table>
   <p id="inputs"></p>
   <p id="length"></p>
+  <ul name="split" id="bottomList">
+  </ul>
   <script type="text/javascript">
    function newData(){
      var win = window.location.search;
@@ -33,6 +35,10 @@
      length.innerHTML = len;
      
      var splitVer = winRe.split("&");
+     var split = documen.getElementByName("split");
+     
+     var i1 = splitVer.substr(1);
+     var i2 = splitVer.substr(2);
     }
   </script>
  </body>
