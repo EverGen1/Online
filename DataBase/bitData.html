@@ -25,7 +25,7 @@
   <script type="text/javascript">
    function newData(){
     var x = 0;
-    var win = window.location.search.substr(1).split("&");
+    var win = window.location.search;
     var fix = win.replace("%20", " ");
     fix += win.replace("input1.value=", "");
     fix += win.replace("input2.value=", "");
