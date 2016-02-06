@@ -21,44 +21,14 @@
    <th>Password</th>
    <th>Email</th>
   </table>
-  <p id="inputs"></p>
-  <p id="length"></p>
-  <ul name="split" id="split">
-  </ul>
   <script type="text/javascript">
    function newData(){
-     var win = window.location.search;
-     var winRe = win.replace("%20", " ");
-     var len = winRe.length;
-     
-     var inputs = document.getElementById("inputs");
-     inputs.innerHTML = winRe;
-     
-     var length = document.getElementById("length");
-     length.innerHTML = len;
-     
-     var splitVer = winRe.search.substr(1).split("&");
-     var split = document.getElementById("split");
-     
-     var list = "<li id='put1'></li>";
-     list += "<li id='put2'></li>";
-     list += "<li id='put3'></li>";
-     list += "<li id='put4'></li>";
-     
-     var i1 = splitVer(1);
-     var i2 = splitVer(2);
-     var i3 = splitVer(3);
-     var i4 = splitVer(4);
-     
-     split.innerHTML = list;
-      var p1 = document.getElementById("put1");
-       p1.innerHTML = i1;
-      var p2 = document.getElementById("put2");
-       p2.innerHTML = i2;
-      var p3 = document.getElementById("put3");
-       p3.innerHTML = i3;
-      var p4 = document.getElementById("put4");
-       p4.innerHTML = i4;
+    var x = 0;
+    var win = window.location.search.substr(1).split("&");
+    var winRe = win.replace("%20", " ");
+     for(x<=winRe.length; x++){
+      eval("document.table.BitBank."+winRe[x])   
+     }
     }
   </script>
  </body>
