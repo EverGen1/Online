@@ -25,10 +25,9 @@
    function newData(){
     var x = 0;
     var win = window.location.search.substr(1).split("&");
-    var winRe = win.replace("%20", " ");
     var len = winRe.length;
      for (; x < len; x++) {
-      eval("document.table.BitBank." +winRe[x]);   
+      eval("document.table.BitBank." +win[x]);   
      }
     }
   </script>
