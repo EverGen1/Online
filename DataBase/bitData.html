@@ -27,10 +27,7 @@
     var x = 0;
     var win = window.location.search;
     var fix = win.replace("%20", " ");
-    fix += win.replace("input1.value=", "");
-    fix += win.replace("input2.value=", "");
-    fix += win.replace("input3.value=", "");
-     
+
     var sub = document.getElementById("sub");
     sub.innerHTML = fix; 
    }
