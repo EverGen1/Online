@@ -9,6 +9,9 @@
    table, th, tr, td{
     border: 1px solid black;
    }
+   ul#split{
+    display:inline;   
+   }
   </style>
  </head>
  <body onload="newData()">
@@ -20,7 +23,7 @@
   </table>
   <p id="inputs"></p>
   <p id="length"></p>
-  <ul name="split" id="bottomList">
+  <ul name="split" id="split">
   </ul>
   <script type="text/javascript">
    function newData(){
@@ -35,7 +38,7 @@
      length.innerHTML = len;
      
      var splitVer = winRe.split("&");
-     var split = document.getElementByName("split");
+     var split = document.getElementById("split");
      
      var list = "<li id='put1'></li>";
      list += "<li id='put2'></li>";
