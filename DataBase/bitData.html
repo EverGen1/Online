@@ -46,7 +46,15 @@
      objects += "<li id='i2'></li>";
      objects += "<li id='i3'></li>";
      objects += "<li id='i4'></li>";
-    list.innerHTML = objects; 
+    list.innerHTML = objects;
+     var s = no4.search.substr(1).split(" ");
+      var l1 = s.substring(2);
+       var l1Fix = l1.replace("'", "");
+     var i1 = document.getElementById("i1");
+      i1.innerHTML = l1Fix;
+     var i2 = document.getElementById("i2");
+     var i3 = document.getElementById("i3");
+     var i4 = document.getElementById("i4");      
    }
   </script>
  </body>
