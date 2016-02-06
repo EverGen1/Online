@@ -28,10 +28,13 @@
     var win = window.location.search;
     var fix = win.replace("%20", " ");
     var newFix = fix.replace("%20", " ");
-    var reFix = newFix.replace("'", " ");
+    var reFix1 = newFix.replace("input1.value=", "");
+    var reFix2 = reFix1.replace("input2.value=", "");
+    var reFix3 = reFix2.replace("input3.value=", "");
+    var reFix4 = reFix3.replace("input4.value=", "");
 
     var sub = document.getElementById("sub");
-    sub.innerHTML = reFix; 
+    sub.innerHTML = reFix4; 
    }
   </script>
  </body>
