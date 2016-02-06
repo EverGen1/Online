@@ -22,6 +22,7 @@
    <th>Email</th>
   </table>
   <p id="sub"></p>
+  <ul id="list"></ul>
   <script type="text/javascript">
    function newData(){
     var x = 0;
@@ -38,7 +39,14 @@
     var no4 = no3.replace("&", " ");
 
     var sub = document.getElementById("sub");
-    sub.innerHTML = no4; 
+    sub.innerHTML = no4;
+    
+    var  list = document.getElementById("list");
+     var objects = "<li id='i1'></li>";
+     objects += "<li id='i2'></li>";
+     objects += "<li id='i3'></li>";
+     objects += "<li id='i4'></li>";
+    list.innerHTML = objects; 
    }
   </script>
  </body>
