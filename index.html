@@ -45,7 +45,7 @@
    }
   </style>
  </head>
- <body>
+ <body onload="ipAddress">
   <div class="head">
    <div class="logo" align="center">
     <a href="http://www.evergenco.us">
@@ -181,6 +181,12 @@
      function educater(){
       subD.innerHTML = not;
      }
+    function ipAddress(){
+     var ip = java.net.InetAddress.getLocalHost();
+     var ipA = document.getElementById("ipAdd");
+     
+     ipA.innerHTML = ip;
+    } 
   </script>
   <noscript>You Must Have JavaScript Enabled!!</noscript>
   <div id="modo">
@@ -191,8 +197,7 @@
   <div id="contentPage"><p id="Page">Home Page</p></div>
   <ul id="bottomList">
    <li><p>You Ip Address Is</p></li>
-   <li><p id="ipAdd"></p></li>
+   <li><p id="ipAdd" name="ipAdd"></p></li>
   </ul>
-  <script type="application/javascript" src="ttp://jsonip.appspot.com/?callback=getip"></script>
  </body>
 </html>
