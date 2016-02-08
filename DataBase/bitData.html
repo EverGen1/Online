@@ -15,47 +15,35 @@
   </style>
  </head>
  <body onload="newData()">
-  <table name="BitBank" id="BitBank">
-   <th>Full Name</th>
-   <th>User Name</th>
-   <th>Password</th>
-   <th>Email</th>
-  </table>
-  <p id="sub"></p>
-  <ul id="list"></ul>
+  <div id="tables" style="visibility:collapse;">
+   <table name="BitBank" id="BitBank">
+    <th>Full Name</th>
+    <th>User Name</th>
+    <th>Password</th>
+    <th>Email</th>
+    <th>IP</th>
+   </table>
+  </div> 
   <script type="text/javascript">
    function newData(){
-    var x = 0;
-    var win = window.location.search;
-    var fix = win.replace("%20", " ");
-    var newFix = fix.replace("%20", " ");
-    var reFix1 = newFix.replace("input1.value=", "");
-    var reFix2 = reFix1.replace("input2.value=", "");
-    var reFix3 = reFix2.replace("input3.value=", "");
-    var reFix4 = reFix3.replace("input4.value=", "");
-    var no1 = reFix4.replace("?", "");
-
-    var sub = document.getElementById("sub");
-    sub.innerHTML = no1;
+    var tab = document.getElementById("tables");
+    tab.style.visibility = "visible";
     
-    var  list = document.getElementById("list");
-     var objects = "<li id='i1'></li>";
-     objects += "<li id='i2'></li>";
-     objects += "<li id='i3'></li>";
-     objects += "<li id='i4'></li>";
-    list.innerHTML = objects;
-     var s1 = window.location.search.substr(1).length;
-      var s1Fix = s1.
-     
-     var l1 = st1;
-     
-     var i1 = document.getElementById("i1");
-      i1.innerHTML = l1;
-     var i2 = document.getElementById("i2");
-     var i3 = document.getElementById("i3");
-     var i4 = document.getElementById("i4");      
-   }
+    var win = window.location.search;
+    
+    var in1Fix1 = win.replace("%20", " ");
+    var in1Fix2a = in1Fix1.replace("'", "");
+    var in1Fix2A = in1Fix2a.replace("'", "");
+    var in1Fix2b = in1Fix2A.replace("'", "");
+    var in1Fix2B = in1Fix2b.replace("'", "");
+    var in1Fix2c = in1Fix2B.replace("'", "");
+    var in1Fix2C = in1Fix2c.replace("'", "");
+    var in1Fix2d = in1Fix2C.replace("'", "");
+    var in1Fix2D = in1Fix2d.replace("'", "");
+    var in1Fix3A = in1Fix2D.replace("&")
+   } 
   </script>
+  <noscript>You Need To Enable Javascript</noscript>script>
  </body>
 </html>
 </DOCTYPE>
