@@ -45,7 +45,7 @@
    }
   </style>
  </head>
- <body onload="ipAddress">
+ <body onload="ipAddress()">
   <div class="head">
    <div class="logo" align="center">
     <a href="http://www.evergenco.us">
@@ -181,12 +181,11 @@
      function educater(){
       subD.innerHTML = not;
      }
-    function ipAddress(){
-     var ip = java.net.InetAddress.getLocalHost();
-     var ipA = document.getElementById("ipAdd");
-     
-     ipA.innerHTML = ip;
-    } 
+     function ipAddress(){
+      var ip = "" + java.net.InetAddress.getLocalHost;
+      var ipa = document.getElementById("ipAdd");
+      ipa.innerHTML = ip;
+     }
   </script>
   <noscript>You Must Have JavaScript Enabled!!</noscript>
   <div id="modo">
