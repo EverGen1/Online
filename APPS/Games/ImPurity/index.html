@@ -31,6 +31,9 @@
     var game = document.getElementById("game");
     var mini = document.getElementById("minimap");
     
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    
     var x = game.width;
     var y = game.width;
     var x = 0;
@@ -40,11 +43,13 @@
     
     var popDoc =  "<div id='popDocument'>";
     popDoc += "</div>";
-    popDoc += "height ='' + popHeight";
-    popDoc += "width =  '' + popWidth";
+    popDoc += "height = + popHeight";
+    popDoc += "width = + popWidth";
     
     function gameStart(){
-     window.open( newPopup, popDoc);   
+     window.open("newPopup", popDoc);
+     game.style.width = width;
+     game.style.height = height;   
     }
    </script>
  </body>
