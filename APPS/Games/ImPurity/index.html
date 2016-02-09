@@ -20,7 +20,11 @@
    <script type="text/javascript" src="http://threes.org/src/Three.js"></script>
    <script type="text/javascript">
     var scene = new THREE.scene();
-    var aspect = window.inner
+    var aspect = window.innerWidth / window.innerHeight;
+    var camera = new THREE.PerspectiveCamera( 75, aspect, 0.1, 1000);
+    var render = new THREE.WebGLRenderer();
+     render.setSize( window.innerWidth, window.innerHeight );
+    document.body.appendChild( render.domElement ); 
    </script>
  </body>
 </html>
