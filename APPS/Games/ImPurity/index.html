@@ -41,13 +41,15 @@
     var popWidth = "450";
     var popHeight = "400";
     
+    var url = "";
+    
     var popDoc =  "<div id='popDocument'>";
     popDoc += "</div>";
     popDoc += "height = + popHeight";
     popDoc += "width = + popWidth";
     
     function gameStart(){
-     window.open(popDoc);
+     window.open(url, 'newPopup', popDoc);
      game.style.width = width;
      game.style.height = 600;   
     }
