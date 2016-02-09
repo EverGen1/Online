@@ -18,6 +18,9 @@
    canvas#game{
     background-image: url("http://www.evergenco.us/APPS/Games/ImPurity/Images/back.png")
    }
+   ul#list{
+    display:inline;   
+   }
   </style>
  </head>
  <body onload="gameStart()" onunload="gameEnd()">
@@ -44,6 +47,12 @@
     var url = "";
     
     var popDoc =  "<div id='popDocument'>";
+    popDoc += "<div align='center'>";
+    popDoc += "<ul id='list'>";
+    popDoc += "<li><input type='button' value='login' onclick='log()'></li>";
+    popDoc += "<li><input type='button' value='signup' onclick='sin()'></li>";
+    popDoc += "</ul>";
+    popDoc += "</div>";
     popDoc += "</div>";
     popDoc += "height = + popHeight";
     popDoc += "width = + popWidth";
