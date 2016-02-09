@@ -8,23 +8,45 @@
     background-color:black;   
     background-image: url("http://www.evergenco.us/APPS/Games/Impurity/Images/back.png");
    }
+   canvas#game{
+    width:window.innerWidth;
+    height:window.innerHeight;   
+   }
+   canvas#minimap{
+    width:250px;
+    height:200px;
+   }
+   div#popDocument{
+    background-image: url("http://www.evergenco.us/APPS/Games/Impurity/Images/logbox.png");   
+   }
   </style>
  </head>
- <body onload="gameStart()" onbeforeunload="gameEnd()">
+ <body onload="gameStart()" onunload="gameEnd()">
    <div align="center"><font size="12" color="red">ImPurity</font></div>
    <div align="right"><canvas id="minimap"></canvas></div>
    <div id="screen" align="center">
      <canvas id="game"></canvas>
     </div>
    </div>
-   <script type="text/javascript" src="http://threes.org/src/Three.js"></script>
    <script type="text/javascript">
-    var scene = new THREE.scene();
-    var aspect = window.innerWidth / window.innerHeight;
-    var camera = new THREE.PerspectiveCamera( 75, aspect, 0.1, 1000);
-    var render = new THREE.WebGLRenderer();
-     render.setSize( window.innerWidth, window.innerHeight );
-    document.body.appendChild( render.domElement ); 
+    var game = document.getElementById("game");
+    var mini = document.getElementById("minimap");
+    
+    var x = game.width;
+    var y = game.width;
+    var x = 0;
+    
+    var popWidth = "450";
+    var popHeight = "400";
+    
+    var popDoc =  "<div id='popDocument'>";
+    popDoc += "</div>";
+    popDoc += "height ='' + popHeight";
+    popDoc += "width =  '' + popWidth";
+    
+    function gameStart(){
+     window.open( newPop, popDoc);   
+    }
    </script>
  </body>
 </html>
