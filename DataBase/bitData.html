@@ -25,10 +25,10 @@
    </table>
   <p id="origin"></p>
   <ul id="split">
-   <li id=""></li>
-   <li></li>
-   <li></li>
-   <li></li>
+   <li id="input1"></li>
+   <li id="input2"></li>
+   <li id="input3"></li>
+   <li id="Input4"></li>
   </ul>
   <script type="text/javascript">
    function newData(){
@@ -36,8 +36,14 @@
     var p = document.getElementById("origin");
     tab.style.visibility = "visible";
     
+    var in1 = document.getElementById("input1");
+    var in2 = document.getElementById("input2");
+    var in3 = document.getElementById("input3");
+    var in4 = document.getElementById("input4");
+    
     var win = window.location.search;
-    var sub1 = win.substring(1);
+    var spliting = win.split("&");
+    var split1 = spliting.substring(1);
     
     p.innerHTML = win;
    } 
