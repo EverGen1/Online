@@ -24,12 +24,7 @@
     <th>IP</th>
    </table>
   <p id="origin"></p>
-  <ul id="split">
-   <li id="input1"></li>
-   <li id="input2"></li>
-   <li id="input3"></li>
-   <li id="input4"></li>
-  </ul>
+  <p id="input1"></p>
   <script type="text/javascript">
    function newData(){
     var con = document.getElementById("content");
@@ -41,9 +36,13 @@
     p.innerHTML = win;
     
     var in1 = document.getElementById("input1");
-     var str1 = win.substring("input1.value=").sub();
+     var in1Fix1 = win.replace("?", "");
+     var in1Fix2 = in1Fix1.replace("input1.value=", "");
+     var in1Fix3a = in1Fix2.replace("'", "");
+     var in1Fix3b = in1Fix3a.replace("'", "");
      
-    in1.innerHTML = str1; 
+     
+    in1.innerHTML = in1Fix3b; 
    } 
   </script>
   <noscript>You Need To Enable Javascript</noscript>
