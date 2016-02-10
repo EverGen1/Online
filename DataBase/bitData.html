@@ -15,7 +15,7 @@
   </style>
  </head>
  <body onload="newData()">
-  <div id="tables" style="visibility:collapse;">
+  <div id="content" style="visibility:collapse;">
    <table name="BitBank" id="BitBank">
     <th>Full Name</th>
     <th>User Name</th>
@@ -23,24 +23,23 @@
     <th>Email</th>
     <th>IP</th>
    </table>
-  </div> 
+  <p id="origin"></p>
+  <ul id="split">
+   <li id=""></li>
+   <li></li>
+   <li></li>
+   <li></li>
+  </ul>
   <script type="text/javascript">
    function newData(){
-    var tab = document.getElementById("tables");
+    var tab = document.getElementById("content");
+    var p = document.getElementById("origin");
     tab.style.visibility = "visible";
     
     var win = window.location.search;
+    var sub1 = win.substring(1);
     
-    var in1Fix1 = win.replace("%20", " ");
-    var in1Fix2a = in1Fix1.replace("'", "");
-    var in1Fix2A = in1Fix2a.replace("'", "");
-    var in1Fix2b = in1Fix2A.replace("'", "");
-    var in1Fix2B = in1Fix2b.replace("'", "");
-    var in1Fix2c = in1Fix2B.replace("'", "");
-    var in1Fix2C = in1Fix2c.replace("'", "");
-    var in1Fix2d = in1Fix2C.replace("'", "");
-    var in1Fix2D = in1Fix2d.replace("'", "");
-    var in1Fix3A = in1Fix2D.replace("&")
+    p.innerHTML = win;
    } 
   </script>
   <noscript>You Need To Enable Javascript</noscript>script>
