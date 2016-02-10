@@ -9,6 +9,9 @@
    table{
     border:10 solid black;   
    }
+   ul#list li{
+    display:inline;   
+   }
   </style>
  </head>
  <body onload="checkdata()">
@@ -25,7 +28,13 @@
    function checkdata(){
     var win = window.location.search;
     t1.style.visibility = "visible";
+    
+    var str = win;
+    
    }
   </script>
+  <ul id="list">
+   <li>
+  </ul>
  </body>
 </html>  
