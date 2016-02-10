@@ -41,36 +41,9 @@
     p.innerHTML = win;
     
     var in1 = document.getElementById("input1");
-     var in1Fix1a = win.replace("%20", " ");
-     var in1Fix1b = in1Fix1a.replace("%20", " ");
-     var in1Fix2a = in1Fix1b.replace("%27", "");
-     var in1Fix2b = in1Fix2a.replace("%27", "");
-     var in1Fix2c = in1Fix2b.replace("%27", "");
-     var in1Fix2d = in1Fix2c.replace("%27", "");
-     var in1Fix2e = in1Fix2d.replace("%27", "");
-     var in1Fix2f = in1Fix2e.replace("%27", "");
-     var in1Fix2g = in1Fix2f.replace("%27", "");
-     var in1Fix2h = in1Fix2g.replace("%27", "");
-     var in1Fix3a = in1Fix2h.replace("input1.value=", "");
-     var in1Fix3b = in1Fix3a.replace("input2.value=", "");
-     var in1Fix3c = in1Fix3b.replace("input3.value=", "");
-     var in1Fix3d = in1Fix3c.replace("input4.value=", "");
-     var in1Fix4a = in1Fix3d.replace("&", ",");
-     var in1Fix4b = in1Fix4a.replace("&", ",");
-     var in1Fix4c = in1Fix4b.replace("&", ",");
-     var in1Fix5a = in1Fix4c.replace("'", ",");
-     var in1Fix5b = in1Fix5a.replace("'", "");
-     var in1Fix5c = in1Fix5b.replace("'", "");
-     var in1Fix5d = in1Fix5c.replace("'", " ");
-     var in1Fix5e = in1Fix5d.replace("'", "");
-     var in1Fix5f = in1Fix5e.replace("'", " ");
-     var in1Fix5g = in1Fix5f.replace("'", "");
-     var in1Fix5h = in1Fix5g.replace("'", "");
-     var in1Fix6 = in1Fix5h.replace("?", "");
-     var in1Fix7 = in1Fix6.split(",");
-     var in1Fix8 = in1Fix7.search;
+     var str1 = win.substring("input1.value=").sub();
      
-    in1.innerHTML = in1Fix8; 
+    in1.innerHTML = str1; 
    } 
   </script>
   <noscript>You Need To Enable Javascript</noscript>
