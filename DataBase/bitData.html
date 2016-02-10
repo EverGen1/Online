@@ -41,9 +41,10 @@
     p.innerHTML = win;
     
     var in1 = document.getElementById("input1");
-     var in1Fix1 = win.replacce("%20", "");
+     var in1Fix1a = win.replace("%20", "");
+     var in1Fix1b = in1Fix1a.replace("%27", "");
      
-    in1.innerHTML = in1Fix1; 
+    in1.innerHTML = in1Fix1b; 
    } 
   </script>
   <noscript>You Need To Enable Javascript</noscript>
