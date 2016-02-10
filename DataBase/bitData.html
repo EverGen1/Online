@@ -32,10 +32,13 @@
   </ul>
   <script type="text/javascript">
    function newData(){
+    var con = document.getElementById("content");
+    con.style.visibility = "visible";
+    
     var win = window.location.search.substr(1).split("&");
     var x = 0;
     for(x=o;x<=win.length;x++){
-     eval("document.table.BitBank" + win[x]);
+     eval("document.tables.BitBank" + win[x]);
     }
    } 
   </script>
