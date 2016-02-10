@@ -36,10 +36,9 @@
     con.style.visibility = "visible";
     
     var win = window.location.search.substr(1).split("&");
-    var x = 0;
-    for(x=o;x<=win.length;x++){
-     eval("document.tables.BitBank" + win[x]);
-    }
+    
+    var p = document.getElementById("p");
+    p.innerHTML = win;
    } 
   </script>
   <noscript>You Need To Enable Javascript</noscript>
