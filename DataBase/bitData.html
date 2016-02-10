@@ -28,25 +28,15 @@
    <li id="input1"></li>
    <li id="input2"></li>
    <li id="input3"></li>
-   <li id="Input4"></li>
+   <li id="input4"></li>
   </ul>
   <script type="text/javascript">
    function newData(){
-    var tab = document.getElementById("content");
-    var p = document.getElementById("origin");
-    tab.style.visibility = "visible";
-    
-    var in1 = document.getElementById("input1");
-    var in2 = document.getElementById("input2");
-    var in3 = document.getElementById("input3");
-    var in4 = document.getElementById("input4");
-    
-    var win = window.location.search;
-    var spliting = win.split("&");
-    var split1 = spliting.substring(1);
-    
-    p.innerHTML = win;
-    in1.innerHTML = split1;
+    var win = window.location.search.substr(1).split("&");
+    var x = 0;
+    for(x=o;x<=win.length;x++){
+     eval("document.table.BitBank" + win[x])
+    }
    } 
   </script>
   <noscript>You Need To Enable Javascript</noscript>
