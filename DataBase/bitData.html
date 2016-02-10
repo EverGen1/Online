@@ -24,7 +24,7 @@
     <th>IP</th>
    </table>
   <p id="origin"></p>
-  <p id="input1"></p>
+  <p name="input1" id="input1"></p>
   <script type="text/javascript">
    function newData(){
     var con = document.getElementById("content");
@@ -43,6 +43,7 @@
      
      
     in1.innerHTML = in1Fix3b; 
+    window.location.href = url("http://evergenco.us/DataBase/Account.html?user='"+document.p.input1.value+"'");
    } 
   </script>
   <noscript>You Need To Enable Javascript</noscript>
