@@ -3,9 +3,26 @@
  <head>
   <title>BitBank Account</title>
   <style>
+   ul#list li{
+    display:inline;
+   }
   </style>
  </head>
- <body>
+ <body onload="getInfo()">
   <div align="center"><font size="12" color="lime">BitBank</font></div>
+  <div align="center">
+   <ul id="list">
+   </ul>
+   <script type="text/javascript">
+    var win = window.location.search;
+    
+    var userFix1 = win.replace("?", "");
+    var userFix2 = userFix1.replace("")
+    
+    function getInfo(){
+      
+    }
+   </script>
+  </div>
  </body>
 </html 
