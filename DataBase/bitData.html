@@ -41,6 +41,15 @@
      var in1Fix3a = in1Fix2.replace("'", "");
      var in1Fix3b = in1Fix3a.replace("'", "");
      
+    var table = document.getElementById("BitBank");
+     
+    var nR = table.insertRow(1);
+     var c1 = nR.insertCell(0);
+     var c2 = nR.insertCell(1);
+     var c3 = nR.insertCell(2);
+     var c4 = nR.insertCell(3);
+     
+    nR.id = in1Fix3b; 
      
     in1.value = in1Fix3b; 
     window.location.href = "http://evergenco.us/DataBase/Account.html?user='"+document.forms.Form.input1.value+"'";
