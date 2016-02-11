@@ -14,7 +14,7 @@
    <form name="login">
     <input id="input1" name="User Name">
     <input id="input2" name="Password" value="Create Password" onfocus="hide()">
-    <input id="input3" value="" onclick="submit()">
+    <input id="input3" type="button" value="" onclick="submit()">
    </form>
   </div>
   <script type="text/javascript">
@@ -31,7 +31,7 @@
    var in3 = document.getElementById("input3");
    
    function getInfo(){
-    in1.value = userfix4;
+    in1.value = userFix4;
     if(string = "users"){
      in3.value = "Complete Registration";
     }
