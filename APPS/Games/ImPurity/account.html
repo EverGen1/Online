@@ -26,10 +26,18 @@
    s += "<input type='button' value='SignUp' onclick='submit2()'>"
    s += "</form>";
    
+   var fin = "<form name='finish'>";
+   fin += "<input id='pass' onfocus='hide4()'>";
+   fin += "<input type='button' value='Complete Registration' onclick='submit3()'>";
+   fin += "</form>";
+   
    var li = "<ul id='list'>";
    li += "<input type='button' value='SignIn' onclick='log()'>";
    li += "<input type='button' value='Register' onclick='sin()'>";
    li += "</ul>";
+   
+   var con = document.getElementById("content");
+   var men = document.getElementById("menu");
    
    var win = window.location.search;
    
@@ -44,6 +52,8 @@
    function area(){
     if(win = ""){
      men.innerHTML = li;   
+    }else{
+     men.innerHTML = fin;   
     }   
    }
   </script>
