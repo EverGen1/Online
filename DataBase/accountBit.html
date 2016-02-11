@@ -11,18 +11,31 @@
  <body onload="getInfo()">
   <div align="center"><font size="12" color="lime">BitBank</font></div>
   <div align="center">
-   <ul id="list">
-   </ul>
-   <script type="text/javascript">
-    var win = window.location.search;
-    
-    var userFix1 = win.replace("?", "");
-    var userFix2 = userFix1.replace("")
-    
-    function getInfo(){
-      
-    }
-   </script>
+   <form name="login">
+    <input id="input1" name="User Name">
+    <input id="input2" name="Password" value="Create Password" onfocus="hide()">
+    <input id="input3" value="" onclick="submit()">
+   </form>
   </div>
+  <script type="text/javascript">
+   var win = window.location.search;
+   
+   var userFix1 = win.replace("?", "");
+   var userFix2 = userFix1.replace(""", "");
+   var userFix3 = userFix2.replace(""", "");
+   var userFix4 = userFix3.replace("user=", "");
+   
+   var string = win.substring(2,5);
+   
+   var in1 = document.getElementById("input1");
+   var in3 = document.getElementById("input3");
+   
+   function getInfo(){
+    in1.value = userfix4;
+    if(string = "users"){
+     in3.value = "Complete Registration";
+    }
+   }
+  </script>
  </body>
 </html 
