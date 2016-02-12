@@ -27,8 +27,13 @@
    var userFix2d = userFix2c.replace("%27", "");
    var userFix3 = userFix2d.replace("%20", " ");
    var userFix4 = userFix3.replace("user=", "");
+   var userFix5a = userFix4.replace("'", "");
+   var userFix5b = userFix5a.replace("'", "");
+   var userFix5c = userFix5b.replae("'", "");
+   var userFix5d = userFix5c.replace("'", "");
+   var userFixLen = userFix5d.length;
    
-   var string = win.substring(2,5);
+   var user = win.substring(2, -19 - userFixLen);
    
    var in1 = document.getElementById("input1");
    var in2 = document.getElementById("input2");
