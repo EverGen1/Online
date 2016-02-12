@@ -41,7 +41,7 @@
    
    var win1 = window.location.search;
    
-   var expr = /^([A-Za-z0-9_\-\.])$/;
+   var u = ?user="/^([A-Za-z0-9_\-\].)$/"
    
    function log(){
     con.innerHTML = l;   
@@ -57,7 +57,7 @@
    function area(){
     if(win1 = ""){
      men.innerHTML = li;   
-    }else if(win1 = "?user=''+expr"){
+    }else if(win1 = u){
      men.innerHTML = fin;   
     }   
    }
