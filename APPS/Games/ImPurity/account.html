@@ -39,7 +39,7 @@
    var con = document.getElementById("content");
    var men = document.getElementById("menu");
    
-   var win1 = window.location.search;
+   var win = window.location.search;
    
    var u = "?user='/^([A-Za-z0-9_\-\].)$/'";
    
@@ -55,7 +55,7 @@
     }
    
    function area(){
-    if(win1 = u){
+    if(win = u){
      men.innerHTML = fin;   
     }else{
      men.innerHTML = li;   
