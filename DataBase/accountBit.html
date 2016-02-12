@@ -13,7 +13,7 @@
   <div align="center">
    <form name="login">
     <input id="input1" name="UserName">
-    <input id="input2" name="Password" value="Create Password" onfocus="hide()">
+    <input id="input2" name="Password" value="Create Password" onfocus="hide1()">
     <input id="input3" type="button" value="" onclick="submit()">
    </form>
   </div>
@@ -38,10 +38,13 @@
     if(string = "users"){
      in3.value = "Complete Registration";
     }
+   } 
     function submit(){
      window.location.href = "http://www.evergenco.us/DataBase/bitData.html?user='"+document.forms.login.UserName.value+"'&pass='"+document.forms.login.Password.value+"'";
     }
-   }
+    function hide1(){
+     in1.value = "";
+    }
   </script>
  </body>
 </html 
