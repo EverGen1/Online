@@ -43,9 +43,15 @@
      var in1Fix3b = in1Fix3a.replace("%27", "");
      var in1Fix4 = in1Fix3b.replace("%20", " ");
      
+    var newTable = "<table id=''>";
+    newTable += "<th>Login</th>";
+    newTable += "<th>Added</th>";
+    newTable += "<th>Withdraw</th>";
+    newTable += "</table>"
+     
     var table = document.getElementById("BitBank");
      
-    var nR = table.insertRow(1);
+    var nR = table.new.insertRow(1);
      var c1 = nR.insertCell(0);
      var c2 = nR.insertCell(1);
      var c3 = nR.insertCell(2);
@@ -55,6 +61,8 @@
     c2.innerHTML = in1Fix4;
      
     in1.value = in1Fix4; 
+    
+    newTable.id = in1Fix4;
    } 
   </script>
   <noscript>You Need To Enable Javascript</noscript>
