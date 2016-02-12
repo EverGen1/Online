@@ -41,6 +41,7 @@
      var in1Fix2 = in1Fix1.replace("input1.value=", "");
      var in1Fix3a = in1Fix2.replace("%27", "");
      var in1Fix3b = in1Fix3a.replace("%27", "");
+     var in1Fix4 = in1Fix3c.replace("%20", " ");
      
     var table = document.getElementById("BitBank");
      
@@ -50,9 +51,9 @@
      var c3 = nR.insertCell(2);
      var c4 = nR.insertCell(3);
      
-    nR.id = in1Fix3b; 
+    nR.id = in1Fix34; 
      
-    in1.value = in1Fix3b; 
+    in1.value = in1Fix34; 
     
     var pass = win.search("pass=").sub();
     var user = win.search("user=").sub();
