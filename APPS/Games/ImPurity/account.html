@@ -22,7 +22,7 @@
    l += "</form>";
    
    var s = "<form name='sin'>";
-   s += "<input id='sin' onfocus='hide3()'>";
+   s += "<input id='in3' onfocus='hide3()'>";
    s += "<input type='button' value='SignUp' onclick='submit2()'>"
    s += "</form>";
    
@@ -39,7 +39,9 @@
    var con = document.getElementById("content");
    var men = document.getElementById("menu");
    
-   var win = window.location.search;
+   var win1 = window.location.search;
+   
+   var win2 = "?user='/^([A-Za-z0-9])'";
    
    function log(){
     con.innerHTML = l;   
@@ -48,11 +50,14 @@
    function sin(){
     con.innerHTML = s;   
    }
+    function submit2(){
+     window.location.href = "http://www.evergenco.us/APPS/Games/ImPurity/data.html?input1='"+document.forms.sin.in3.value+"'";   
+    }
    
    function area(){
-    if(win = ""){
+    if(win1 = ""){
      men.innerHTML = li;   
-    }else{
+    }elses if(win1 = win2){
      men.innerHTML = fin;   
     }   
    }
