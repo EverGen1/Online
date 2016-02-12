@@ -41,8 +41,9 @@
    
    var win1 = window.location.search;
    
-   var expr = /^([A-Za-z0-9])$/;
-   var win2 = "?user=''+expr";
+   var expr = /^([A-Za-z0-9_\-\.])$/;
+   
+   var win2 = "?user='' + expr";
    
    function log(){
     con.innerHTML = l;   
