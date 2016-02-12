@@ -43,8 +43,6 @@
    
    var expr = /^([A-Za-z0-9_\-\.])$/;
    
-   var win2 = "?user='' + expr";
-   
    function log(){
     con.innerHTML = l;   
    }
@@ -59,7 +57,7 @@
    function area(){
     if(win1 = ""){
      men.innerHTML = li;   
-    }else if(win1 = win2){
+    }else if(win1 = "?user=%27+expr+%27"){
      men.innerHTML = fin;   
     }   
    }
