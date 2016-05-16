@@ -8,6 +8,9 @@
     font-family:Helvetica;
     background-color:aqua;
    }
+   ul#mainMenu li{
+    display:inline;
+   }
    div.head{
     background-color:white;
    }
@@ -20,6 +23,13 @@
     max-height:50%;
     min-height:10%;
    }
+   input#Account{
+    max-width:50%;
+    min-width:10%;
+    max-height:50%;
+    min-height:10%;
+   }
+   }
    input#Store{
     max-width:50%;
     min-width:10%;
@@ -28,15 +38,14 @@
    }
    img#imgLogo{
     max-width:100%;
-    min-width:50%;
+    min-width:.01%;
    }
    ul#bottomList li{
     display:inline;
-    width:500px;
    }
   </style>
  </head>
- <body onload="setUp()">
+ <body onload="ipAddress()">
   <div class="head">
    <div class="logo" align="center">
     <a href="http://www.evergenco.us">
@@ -48,138 +57,129 @@
    <div class="menu">
     <ul id="mainMenu">
      <li><input id="Enter" type="image" src="http://www.evergenco.us/Images/menu/enter.png" onclick="divChange1()"></li>
+     <li><input id="Account" type="image" src="http://www.evergenco.us/Images/menu/account.png" onclick="divChange2()"></li>
     </ul>
    </div>
   </div>
   <div id="divBody">
-   <div id="homeBody">
-    <div align="center"><h1>About</h1></div>
-    <p>First of all<b>WELCOME!</b> to EverGenCo, and we are glad you have found this site. We want to help others, and by doing so we need yoour help.<a href="Info.txt">!!!For more info click here!!!</a>.
-   </div>
-   <div id="enterBody">
-    <ul id="bottomList">
-     <li><input type="image" src="https://evergen1.github.io/Online/Apps/AppStore/Images/logo.png" onclick="appAppStore()"></li>
-     <li><input type="image" src="https://evegen1.github.io/Online/Apps/"></li>
-    </ul>
-   </div>
-   <div id="aboutBody">
-    <div align="center"><h2><b>What We Do?</b></h2></div>
-    <p>
-     <b>We raise money</b>
-     <ul>
-      <li>By selling virtual, and physical products.</li>
-      <li>Ads</li>
-      <li>Study Books</li>
-     </ul>
-    </p>
-    <p>
-     <b>Innovate The Future</b>
-     <ul>
-      <li>The future of banking</li>
-      <li>New entertainment</li>
-      <li>High quality way to make life simple</li>
-     </ul>
-    </p>
-    <p>
-     <b>How do we help</b>
-     We are currently building the new non-profit orginization, and will notify you when it is running via Social Media
-    </p>
-    <h1><b>Thank You for the consideration to help.</b></h1>
-   </div>
-   <div id="accBody">
-    <div id="aLogIn">
-     <form action="database.evergenco.us" method="get()">
-      <input id="in1" type="text" value="UserName" onfocus="focus()">
-      <input id="in2" type="text" value="Password" onfouce="focus()">
-      <input type="submit" value="login">
-     </form>
-    </div>
-    <div id="aSignUp">
-     <form action="database.evergenco.us" method="post()">
-      <input id="in1" type="text" value="UserName" onfocus="focus()">
-      <input id="in2" type="text" value="Password" onfocus="focus()">
-      <input id="in3" type="text" value="EMail" onfocus="focus()">
-      <ipnut id="in4" type="text" value="I.P. Address" onload="getIP()"></ipnut>
-      <input type="submit" value="SignUp">
-     </form>
-    </div>
-    <script type="text/javascript">
-     var i1 = document.getElementById("in1");
-     var i2 = document.getElementById("in2");
-     var i3 = document.getElementById("in3");
-     var i4 = document.getElementById("in4");
-     
-     var word1 = document.getElementById("in1").value;
-     var word2 = document.getElementById("in2").value;
-     var word3 = document.getElementById("in3").value;
-     var word4 = document.getElementById("in4").value;
-     
-     function focus(){
-      if(i1.value = "word1"){
-       i1.value = "";
-      }else{
-       i1.value = "";
-      }
-      
-      if(i2.value = "word2"){
-       i2.value = "";
-      }else{
-       i2.value = "";
-      }
-      
-      if(i3.value = "word3"){
-       i3.value = "";
-      }else{
-       i3.value = "";
-      }
-     }
-     function getIP(){
-    </script>
-   </div>
   </div>
-  <script type="text/javascript">
-   var dHome = document.getElementById("homeBody");
-   var dEnter = document.getElementById("enterBody");
-   var dAbout = document.getElementById("aboutBody");
-   var dStore = document.getElementById("storeBody");
-   var dAcc = document.getElementById("accBody");
+  <div id = "subDivBody">
+   <p id="text"></p>
+  </div>
+  <script>
+   var dBody = document.getElementById("divBody");
+   var subD = document.getElementById("subDivBody");
    
-   var aLog = document.getElementById("aLogIn");
-   var aSin = document.getElementById("aSignUp");
+   var h1 = "<div align='center'><ul id='bottomList'>";
+   h1 += "<li><input type='image' src='http://www.evergenco.us/Images/menu/subEnter/appstore.png' onclick='subEnterApp()'>";
+   h1 += "</li><li>";
+   h1 += "<input type='image' src='http://www.evergenco.us/Images/menu/subEnter/music.png' onclick='subEnterMusic()'></li>";
+   h1 += "</ul></div>";
    
-   function setUp(){
-    dHome.style.visibility = "visible";
-    dEnter.style.visibility = "collapse";
-    dAbout.style.visibility = "collapse";
-    dStore.style.visibility = "collapse";
-    aLog.style.visibility = "collapse";
-    aSin.style.visibility = "collapse"
-   }
+   var enterMusic = "<div align='center'><ul id='bottomList'>";
+   enterMusic += "<li><input id='musicSearch' type='text' value='Search Music' onfocus='hide()' style='width:100px;'>";
+   enterMusic += "</li><li>";
+   enterMusic += "<input id='musicSubmit' type='submit' value='Search' onclick='searchMusic()'></li>";
+   enterMusic += "</ul></div>";
+   
+   var musicM5 = "<div align='center'><ul style='type:none;'>";
+   musicM5 += "<li><input id='MaroonFive' type='image' src='http://www.evergenco.us/Images/music/Maroon5/band.png' onclick='musicMaroon5'>";
+   musicM5 += "</li></ul>";
+   
+   var error = "<div align='center'><p>";
+   error += "No Music Found</p>";
+   error += "</div>";
 
    function divChange1(){
-    document.getElementById("Page").innerHTML = "Page Enter";
+    document.getElementById("Page").innerHTML = "Entertainment Page";
+    dBody.innerHTML = h1;
+   }
 
-    if(document.getElementById("Page").innerHTML = "Page Enter"){
-     dHome.style.visibility = "collapse";
+   function subEnterApp(){
+    window.open("http://www.evergenco.us/APPS/AppStore");
+   }
+   function subEnterMusic(){
+   	subD.innerHTML = enterMusic;
+   } 
+   
+   function hide(){
+    var mSearch = document.getElementById("musicSearch");
+   	 
+    mSearch.value = "";
+   }
+   function searchMusic(){
+    if(document.getElementById("musicSearch").innerHTML = "Maroon 5"){
+     subD.innerHTML = musicM5;
     }else{
-     dHome.style.visibility = "visible";
-    }
-
-    if(document.getElementById("Page").innerHTML = "Page Enter"){
-     dEnter.style.visibility = "visible";
-    }else{
-     dEnter.style.visibility = "collapse";
+     document.getElementById("text").innerHTML = "No Music Found";	
     }
    }
-   function appAppStore(){
-    window.open("http://app.evergenco.us/AppStore");
-   }
+   
+   var h2 = "<div align='center'><ul id='bottomList'>";
+   h2 += "<li></li><li>";
+   h2 += "<input type='button' value='BitBank' onclick='bitbank()'>";
+   h2 += "</li><li>";
+   h2 += "<input type='button' value='WeDev' onclick='wedev()'>";
+   h2 += "</li><li>";
+   h2 += "<input type='button' value='DisStore' onclick='disstore()'>";
+   h2 += "</li><li>";
+   h2 += "<input type='button' value='EduCater' onclick='educater()'>";
+   h2 += "</li></ul></div>";
+   
+    var bit = "<div align='center'>";
+    bit += "<form name='bitForm'>";
+    bit += "<input name='in1' id='in1' type='text' value='User Name' onfocus='hide1()'>";
+    bit += "<input type='button' value='Open Now!' onclick='send()'>";
+    bit += "</form></div>";
+    
+    var com = "<p>Please Open On Computers Only, and Make Sure You Have Scripts Enabled</p>";
+    
+    var not = "<div align='center'>";
+    not += "<p>Not Yet Avaliable</p>";
+    not += "</div>";
+    
+    function divChange2(){
+     document.getElementById("contentPage").innerHTML = "Account Page";
+     
+     dBody.innerHTML = h2;
+    }
+     function bitbank(){
+      subD.innerHTML = bit;
+      var id = document.getElementsByTagName("input").id;
+      var in1 = id.in1;
+      var in2 = id.in2;
+      var in3 = id.in3;
+      var in4 = id.in4;  
+     }
+     function hide1(){
+      document.getElementById("in1").value = "";
+     }
+     function send(){   
+      var url = "DataBase/bitData.html";
+      window.location.href = "DataBase/bitData.html?input1.value='"+document.forms.bitForm.in1.value+"'";
+     }
+     
+     function wedev(){
+      subD.innerHTML = not;
+     }
+     function disstore(){
+      subD.innerHTML = not;
+     }
+     
+     function educater(){
+      subD.innerHTML = not;
+     }
   </script>
+  <noscript>You Must Have JavaScript Enabled!!</noscript>
   <div id="modo">
    <div align="center">
     <h2>Simple Name, for A Simple Name</h2>
    </div>
   </div>
-  <div id="contentPage"><p id="Page">Page Home</p></div>
+  <div id="contentPage"><p id="Page">Home Page</p></div>
+  <ul id="bottomList">
+   <li><p>You Ip Address Is</p></li>
+   <li><p id="ipAdd" name="ipAdd"></p></li>
+  </ul>
  </body>
 </html>

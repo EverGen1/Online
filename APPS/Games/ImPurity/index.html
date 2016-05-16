@@ -1,0 +1,56 @@
+<DOCTYPE! html>
+<html>
+ <head>
+  <title>ImPurity EGC</title>
+  <style>
+   body{
+    font-family:Helvetica;
+    background-color:black;   
+   }
+   canvas#minimap{
+    width:250px;
+    height:200px;
+    background-color:white;
+   }
+   div#popDocument{
+    background-image: url("http://www.evergenco.us/APPS/Games/ImPurity/Images/logbox.png");   
+   }
+   canvas#game{
+    background-image: url("http://www.evergenco.us/APPS/Games/ImPurity/Images/back.png")
+   }
+   ul#list{
+    display:inline;   
+   }
+  </style>
+ </head>
+ <body onload="gameStart()" onunload="gameEnd()">
+   <div align="center"><font size="12" color="red">ImPurity</font></div>
+   <div id="screen" align="center">
+     <canvas id="game"></canvas>
+    </div>
+   </div>
+   <script type="text/javascript">
+    var game = document.getElementById("game");
+    
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    
+    var x = game.width;
+    var y = game.width;
+    var x = 0;
+    
+    var popWidth = "450";
+    var popHeight = "400";
+    
+    var url = "http://www.evergenco.us/APPS/Games/ImPurity/account.html";
+    
+    function gameStart(){
+     game.style.width = width;
+     game.style.height = height-170;
+    }
+    function gameStart(){
+        
+    }
+   </script>
+ </body>
+</html>

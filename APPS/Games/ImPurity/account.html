@@ -1,0 +1,66 @@
+<DOCTYPE! html>
+<html>
+ <head>
+  <title>ImPurity Account Page</title>
+  <style>
+   ul#list li{
+    display:inline;   
+   }
+  </style>
+ </head>
+ <body onload="area()">
+  <div align="center"><font size="12" color="aqua">ImPurity Account</font></div>
+  <div id="menu" align="center">
+  </div>
+  <div id="content" align="center">
+  </div>
+  <script type="text/javascript">
+   var l = "<form name='log'>";
+   l += "<input id='User Name' onfocus='hide1()'>";
+   l += "<input id='Password' onfocus='hide2()'>";
+   l += "<input type='button' value='LogIn' onclick='submit1()'>";
+   l += "</form>";
+   
+   var s = "<form name='sin'>";
+   s += "<input id='in3' onfocus='hide3()'>";
+   s += "<input type='button' value='SignUp' onclick='submit2()'>"
+   s += "</form>";
+   
+   var fin = "<form name='finish'>";
+   fin += "<input id='pass' onfocus='hide4()'>";
+   fin += "<input type='button' value='Complete Registration' onclick='submit3()'>";
+   fin += "</form>";
+   
+   var li = "<ul id='list'>";
+   li += "<input type='button' value='SignIn' onclick='log()'>";
+   li += "<input type='button' value='Register' onclick='sin()'>";
+   li += "</ul>";
+   
+   var con = document.getElementById("content");
+   var men = document.getElementById("menu");
+   
+   var win = window.location.search;
+   
+   var u = "?user='/^([A-Za-z0-9_\-\].)$/'";
+   
+   function log(){
+    con.innerHTML = l;   
+   }
+   
+   function sin(){
+    con.innerHTML = s;   
+   }
+    function submit3(){
+     window.location.href = "http://www.evergenco.us/APPS/Games/ImPurity/data.html?input1='"+document.forms.finish.pass.value+"'";   
+    }
+   
+   function area(){
+    if(win = "?user='/^([A-Za-z0-9_\-\.])'"){
+     men.innerHTML = fin;   
+    }else{
+     men.innerHTML = li;   
+    }   
+   }
+  </script>
+ </body>
+</html>
